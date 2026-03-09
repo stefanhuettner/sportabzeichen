@@ -28,6 +28,12 @@ _Jedes gelöste Problem wird hier dokumentiert. Pia checkt diese Liste bevor sie
 - **Lösung:** Alle 6 Channels mit `allow: true, requireMention: false` hinzugefügt
 - **Merke:** Neue Slack-Channels immer auch in der Config freischalten
 
+### Token-Verschwendung durch Brute-Force-Debugging
+- **Problem:** Hoher Token-Verbrauch an einem Tag
+- **Ursache:** Config-Docs 5x geladen, dutzende FTP-Varianten durchprobiert statt zu fragen
+- **Lösung:** Erst fragen, dann probieren. Docs einmal lesen und merken. Smarter debuggen.
+- **Merke:** ZHS-Mindset auch beim Debugging: Sweet Spot finden, nicht alles durchprobieren
+
 ### Gateway-Crash durch ungültige Config-Keys
 - **Problem:** Gateway in Crash-Schleife
 - **Ursache:** Ungültige Keys `skills.nano-banana-pro`, `skills.ftp-deploy`, `skills.mailerlite` in openclaw.json geschrieben
