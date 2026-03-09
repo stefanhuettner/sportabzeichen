@@ -46,5 +46,7 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Telegram Streaming abgeschaltet (09.03.2026) — channels.telegram.streaming: "off"
 - commands.config: true (09.03.2026) — /config im Chat verfügbar
 - ZHS-Wissensbasis: 50 Dokumente geladen, zusammengefasst, in Notion + lokal
-- Hosting: dogado Shared Hosting, web314.dogado.net, FTP-Credentials in /root/.openclaw/.ftp-creds
+- Hosting: dogado Shared Hosting, web314.dogado.net, SFTP verbunden ✅ (User: h606421, PW in .ftp-creds)
+- dogado Ordner: diestarkmacherde, susannehuettnerde, kinderleichtmitsusannede, stefanhuettnerde, susannehuettnercom, susanne-kinderleichtde
+- MailerLite: 2 Accounts (MAILERLITE_TOKEN_KINDERLEICHT + MAILERLITE_TOKEN_STARKMACHER), IP-restricted auf 178.104.16.167
 - Lessons Learned Datei: memory/lessons-learned.md — Fehler dokumentieren, nie wiederholen
