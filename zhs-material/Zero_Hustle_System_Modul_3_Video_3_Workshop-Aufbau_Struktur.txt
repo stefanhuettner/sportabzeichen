@@ -1,0 +1,174 @@
+﻿Zero Hustle System Modul 3 Video 3 Workshop-Aufbau Struktur
+
+
+Wissensdatenbank: Zero Hassle System – Modul 3, Video 3 (Workshop-Aufbau & Struktur)
+
+
+Übersicht
+Video 3 des Leads-Moduls zeigt anhand eines realen, hochperformenden Workshops die konkrete Struktur und Dramaturgie eines Evergreen-Workshops. Kernthese: Ein Workshop muss aktiv „verkauft" werden – auch wenn er kostenlos ist. Das Video erklärt Folie für Folie den Aufbau, die psychologische Logik dahinter sowie die technische Produktion und Einbindung in den Funnel.
+
+
+---
+
+
+Performance-Richtwerte des vorgestellten Workshops
+
+
+* Organische Conversion: bis zu **6,5 %**, Durchschnitt **4,8 %**
+* Produktpreis: **222 €**
+* Folienzahl: **79 Folien**
+
+
+---
+
+
+Workshop-Gliederung (Struktur)
+
+
+| Folien | Inhalt |
+|---|---|
+| 1–2 | Titel & Agenda |
+| 3–7 | Social Proof & Bonus-Ankündigung |
+| 8–12 | Persönliche Story & Autoritätsaufbau |
+| 13–16 | Positionierung & Relevanz |
+| 17–19 | Machbarkeit & Realität |
+| 20–24 | Fünf Mythen über digitale Produkte |
+| 25–60 | Hauptteil: drei Geheimnisse (Mehrwertteil) |
+| 61–79 | Produktvorstellung, Closing & Testimonials |
+
+
+---
+
+
+Zeitliche Gewichtung der Abschnitte
+
+
+* **~35 %** → Intro, Social Proof, Autorität, Mythen, Machbarkeit
+* **~35–40 %** → Hauptteil (drei Geheimnisse / Mehrwert)
+* **~15–20 %** → Produktvorstellung, Closing, Call to Action
+
+
+---
+
+
+Inhaltliche Logik je Abschnitt
+
+
+Titel & Agenda (Folien 1–2)
+* Klar kommunizieren, worum es geht
+* Merkmale **oder** Transformation benennen – Transformation ist immer stärker
+* Beispiel: „Wie du nie wieder Stress hast, dein digitales Produkt zu verkaufen" > „Wie du ein digitales Produkt erstellst"
+
+
+Social Proof & Bonus (Folien 3–7)
+* Testimonials zeigen (anonym möglich, wenn Personen keine öffentliche Nennung wollen)
+* Bonus bereits ankündigen (z. B. „exklusiver Bonus für alle, die bis zum Ende dabei bleiben")
+* Bonus-Wert nennen (z. B. „über 2.000 €") – aber **noch kein Pitch**
+* Zielgruppe abholen: 3–5 Aussagen, warum die Person hier richtig ist
+
+
+Autoritätsaufbau / Hero Story (Folien 8–12)
+* Persönliche Geschichte erzählen, die Träume und Wünsche der Zielgruppe widerspiegelt
+* Menschlich + sympathisch bleiben (z. B. private Details einbauen)
+* **Aha-Moment** zeigen: Was hat zur heutigen Lösung geführt?
+* Proof zeigen: Screenshots, Awards, Ergebnisse
+* Zielgruppennahe Formulierungen: „Ich wollte von zu Hause arbeiten, ohne Wecker, ohne Chef"
+
+
+Machbarkeit & Realität (Folien 17–19)
+* Konkrete Rechnung anstellen, die zeigt, wie realistisch Ergebnisse sind
+* Auf Einwände eingehen, die Zielgruppe typischerweise hat
+* Zahlen herunterrechnen: „8.600 Reichweite → 40.000 € Umsatz – das geht auch mit weniger"
+
+
+Mythen-Teil (Folien 20–24)
+* Häufige Fehlannahmen der Zielgruppe widerlegen
+* Dient als Vertrauensaufbau und Einwandbehandlung vor dem Pitch
+
+
+Hauptteil – Drei Geheimnisse (Mehrwert, ~40 % Zeitanteil)
+* Drei bis fünf konkrete Lernpunkte, die die Zielgruppe wirklich weiterbringen
+* **Nicht zu vollständig:** Teilnehmer sollen denken „Ich könnte es alleine schaffen, aber mit dem Produkt geht es schneller/besser"
+* Transformation immer wieder zwischendurch triggern (z. B. „Stell dir vor, du sitzt abends auf der Couch und…")
+* Reels, Screenshots, Proof in den Hauptteil einbauen
+* Evergreen-Reels, die viermal jährlich gepostet werden als Proof nutzen
+
+
+Pitch & Produktvorstellung (letzter Teil)
+* Transformation erneut triggern: „Was würde es für dich bedeuten, automatisiert Geld zu verdienen?"
+* Zwei Optionen vorstellen: ohne Produkt weiter träumen **oder** jetzt starten
+* Produktmerkmale und Boni einzeln vorstellen
+* Ratenzahlung und Einmalzahlung nennen
+* Am Ende: weitere Testimonials als letzter Vertrauensbeweis
+
+
+---
+
+
+Psychologische Prinzipien im Workshop
+
+
+* **Transformation > Merkmale:** Immer erst Transformation kommunizieren, dann Produktdetails
+* **Aktivierung früh starten:** Bei Live-Workshops einfache Fragen (z. B. „Woher kommt ihr?") → Zuhörer schreiben mit → psychologisch aktiviert
+* **Visualisierung erzeugt Kaufabsicht:** Wer sich die Zukunft vorstellt, hat mental schon gekauft
+* **Konsequente Wiederholung:** Argumente, die am Anfang gebracht wurden, am Ende wieder aufgreifen
+* **Q&A** bei Live-Workshops: zu Beginn (Einstieg) und am Ende (Conversion-Support) einbauen; bei Evergreen: WhatsApp-Link stattdessen
+
+
+---
+
+
+Technische Produktion
+
+
+Präsentation
+* Tool: **Canva** (einfache Bearbeitung, jederzeit anpassbar)
+* Struktur bleibt dauerhaft gleich; nur Bilder, Texte und Farben werden bei Bedarf getauscht
+* Einmalig professionell designen lassen möglich
+* Freigabe via Canva: „Teilen → Zeigen → Vortragende Ansicht oder Vollbild"
+
+
+Aufnahme
+* Tool: **OBS Studio**
+* Szene mit Bildschirmaufnahme + Kamera-Overlay (oben rechts)
+* Empfohlene Aufnahme-Einstellungen:
+  - Format: frei wählbar
+  - Methode: CBR (Constant Bitrate)
+  - Bitrate: 10.000 KB/s (~10 MB/s) auf Full HD → sehr hohe Qualität
+* Kamera-Empfehlung: Sony Alpha 7 + Sigma 28–70 (Zoom) oder 35 mm Festbrennweite
+
+
+Upload & Hosting
+* Fertige Aufnahme → Upload bei **Webinaris**
+* Workshop kann danach als Evergreen automatisiert laufen
+
+
+---
+
+
+Evergreen-Lebensdauer & Wartung
+
+
+* Ein gut aufgebauter Workshop kann **bis zu 3 Jahre** laufen
+* Optimierung alle **3–4 Monate**: nur das Video neu aufnehmen, alle anderen Einstellungen bleiben
+* Neues Video → neuer „Launch" möglich → alte Teilnehmer erneut ansprechen
+* Langfristig: organischen Content **und** Werbeanzeigen auf denselben Evergreen-Workshop schalten
+
+
+---
+
+
+Workshop-Produktion: Zeitaufwand & Fazit
+
+
+Schritte bis zum fertigen Evergreen-Workshop:
+1. Skript schreiben
+2. Folien in Canva erstellen und designen
+3. Workshop abfilmen (OBS)
+4. Video schneiden
+5. Upload bei Vimeo (Zwischenablage)
+6. Einrichtung in Webinaris
+
+
+* **Aufwand:** Einmalig hoch – danach dauerhaft automatisiert nutzbar
+* **Ziel:** Fertiger Funnel, der täglich neue Leads über organischen Content oder Ads einzieht und automatisch verkauft

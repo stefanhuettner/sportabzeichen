@@ -1,0 +1,199 @@
+﻿Zero Hassle System Modul 2 Video 3 Evergreen Content System
+
+
+Wissensdatenbank: Zero Hassle System – Modul 2, Video 3 (Evergreen Content System)
+
+
+Übersicht
+Video 3 des Reichweite-Moduls erklärt den vollständigen Aufbau eines automatisierten Evergreen Content Systems – von der Entwicklung von Content Pillars und Hooks über die Evergreen Spirale bis hin zu Planung, Outsourcing und dem Evergreen E-Mail-System. Kernziel: Einmal erstellter Content soll dauerhaft Sichtbarkeit, Leads und Verkäufe generieren – auch ohne aktive Arbeit.
+
+
+Ziel des Evergreen Content Systems
+
+
+Content produziert dauerhaft Sichtbarkeit, Reichweite, Leads und Verkäufe
+System soll zu 95 % automatisiert sein (kein Content-Zwang bei Urlaub, Krankheit, etc.)
+Bestandteile: Content Pillars, Evergreen Hooks, Evergreen Spirale, Content-Verwertung & Planung, technisches System (Notion, Canva, Google Drive) + Freelancer-Automatisierung
+
+
+
+
+Step 1: Content Pillars
+
+
+Werden aus der Kernbotschaft / dem Elevator Pitch abgeleitet
+Beispiel-Pillars: Reichweite aufbauen, Kunden mit Content gewinnen, Evergreen Content, Unternehmertum & freies Leben, Automatisierung & KI
+Pillars decken Transformationen ab – keine Tipps & Tricks, sondern Ängste, Sorgen, Wünsche
+Beispiellogik: Angst „Rechnungen nicht bezahlen" → Wunsch „mehr Reichweite" → Lösung „Evergreen Business"
+Menschen stehen nicht auf wegen Tipps, sondern wegen echter Lebensereignisse (z. B. Elternschaft → Zeitdruck, Geldsorgen)
+
+
+
+
+Step 2: Evergreen Hooks entwickeln
+
+
+Aus jedem Content Pillar werden Evergreen-Fragen der Zielgruppe abgeleitet
+Ziel: 10–30 Hook-Varianten pro Thema, basierend auf den gelernten Hookarten
+Nur Hooks verwenden, die in 2–5 Jahren noch funktionieren
+Keine Jahreszahlen, keine Plattform-spezifischen Details in Evergreen Hooks
+Hook-Pool wird einmal erstellt und dient als dauerhaftes Ideenrepertoire (~400–500 Hooks aus 5–10 Pillars)
+
+
+ChatGPT-Prompt zur Evergreen-Hook-Prüfung
+Enthält 5 Bewertungsfragen:
+
+
+Plattformunabhängig formuliert?
+Bezug auf zeitlose Probleme/Wünsche?
+Emotionale Trigger (Neugier, Angst, Autorität, Verknappung)?
+Gefahr der Überholung durch Technologie/Gesellschaft?
+Wenn nicht Evergreen – wie umformulieren?
+
+
+→ ChatGPT liefert bei Bedarf 5–10 überarbeitete Hook-Varianten
+
+
+Step 3: Die Evergreen Spirale (Content-Repurposing)
+Grundprinzip
+
+
+Aus einer Idee entstehen 50–100 Posts auf verschiedenen Plattformen
+Ausgangspunkt: Longform-Skript (z. B. YouTube-Video oder Blogartikel)
+
+
+Repurposing-Kette (Beispiel)
+
+
+YouTube-Video → Basis (Longform-Skript)
+Podcast → Tonspur aus YouTube (auch als Videopodcast auf Spotify)
+Blogartikel → aus Transkript (manuell oder via ChatGPT)
+Karussell-Post → aus Blogartikel-Überschriften (jeden Slide als Einzelelement gestalten)
+Evergreen Stories → aus einzelnen Karussell-Slides
+Evergreen Reels → aus Karussell-Slides oder YouTube-Ausschnitten
+Einzelbeiträge → aus Karussell-Slides
+Shorts / TikToks / Snapchat → aus Reels
+Threads / LinkedIn / Twitter (X) → aus Blogpassagen, Zitaten, Hooks
+Instagram Broadcast / WhatsApp → Zitate + Teaser
+Pinterest → Karussell-Slides (SEO-Plattform, jahrelange Wirkung)
+Evergreen E-Mails → aus Skript-Kapiteln
+
+
+Tool-Tipp: Opus.Clip
+
+
+Schneidet automatisch Reels/Shorts (15–90 Sek.) aus langen YouTube-Videos
+Automatisierung möglich: bei neuem Upload → automatisch Reels erstellen
+
+
+Rechenbeispiel
+
+
+300 Ideen × 5–10 Formate = 1.500–3.000 Postings pro Jahr
+Aus einer Idee: mind. 5 YouTube Shorts + 5 Karussells + Stories + Reels + LinkedIn + etc.
+
+
+
+
+Step 4: Planung & Produktion
+
+
+Ideen aus Notion-Ideenliste auswählen
+ChatGPT-Masterprompt anwenden → Skript schreiben
+Contentformat wählen (Empfehlung: mind. ein SEO-Longformat integrieren)
+Notion-System: Contentpillars → Hooks → Produktionsschritte → Freelancer-Verantwortlichkeiten
+
+
+Evergreen Content Master Prompt (Vorlage)
+
+
+„Du bist Experte für [Thema]..."
+Enthält: Hook, Storytelling, psychologische Trigger, Platzhalterlink, Auftrag
+Empfehlung: „Schreibe wie jemand mit 200 IQ und bedenke psychologische Trigger und emotionales Storytelling"
+
+
+
+
+Step 5: Google Drive & Notion verbinden
+Google Drive Struktur (Beispiel)
+
+
+Ordner: Karussells, Podcasts, Evergreen Stories, Evergreen Reels, Evergreen Beiträge, B-Roll, Fotos
+Jeder Ordner ist nummeriert und durchgetaktet
+Evergreen Stories: mind. 200–365 Stück, nummeriert, zyklisch genutzt
+Sortierlogik: 2–3 Tage dasselbe Freebie, dann Wechsel
+
+
+Notion Content-Kalender
+
+
+Kalenderansicht oder Checkbox-Liste möglich
+Freelancer erhalten Zugriff mit Verantwortungszuweisung
+Vorlage: Für jeden Tag steht, welche Nummer welcher Content-Typ gepostet wird
+Freelancer arbeitet 4 Wochen voraus
+
+
+
+
+Step 6: Neverending Evergreen E-Mail-System
+
+
+Neue Kontakte landen nach dem Workshop-Funnel automatisch in der Evergreen-E-Mail-Sequenz
+Verzögerung: 3–4 Tage zwischen den Mails (ca. 1–2 Mails/Woche)
+Ziel: 250–300 fertige Evergreen Mails → Wiederholung erst nach ~125 Wochen (ca. 3 Jahre)
+Nach 250 Mails: einfach Betreffzeilen ändern, Inhalt bleibt gleich
+Tracking: Öffnungsrate je Mail → bei schlechter Rate Headline tauschen → nach 2–3 Wochen prüfen
+System läuft als geschlossene Schleife: Wer ganz unten ankommt, startet wieder von vorne
+
+
+
+
+Step 7: Outsourcing-Strategie
+Wann outsourcen?
+
+
+Wenn Freelancer-Stundenlohn unter eigenem liegt
+Wenn Freelancer mehr Umsatz ermöglicht (Automation, Vertrieb)
+Wenn keine kreative Expertise erforderlich ist (z. B. Einplanen, Hochladen, Listenabarbeitung)
+Wenn man durch Outsourcing Zeit für wertvollere Aufgaben gewinnt
+
+
+Empfehlungen
+
+
+Videoschnitt ist oft erster sinnvoller Outsourcing-Schritt
+Freelancer 1 (Cutter): schneidet, erstellt Kapitel, lädt bei YouTube hoch, erstellt Transkript
+Freelancer 2 (VA): lädt Podcast hoch, plant Evergreen Beiträge ein, erstellt LinkedIn-/Blogposts
+Keine Fiverr-Empfehlung → lieber Empfehlungen, Instagram Story oder Google-Suche
+Start: max. 20 Std./Woche selbst arbeiten, schrittweise reduzieren
+
+
+
+
+Content Recycling
+
+
+Evergreen Stories: Wiederholung alle 200–300 Tage
+Beiträge & Karussells: alle 365 Tage (ggf. Design-Update)
+Schlechte Reichweite trotz gutem Content → früher wiederholen
+E-Mails: nach 250 Mails neue Runde starten
+YouTube: alte Videos mit neuem Titel + Thumbnail neu hochladen (besonders bei <600–700 Aufrufen)
+SEO-Inhalte (YouTube, Pinterest, Blog): aktuell keine direkte Wiederholung – aber Aktualisierung möglich
+
+
+
+
+Technologie-Stack
+ToolFunktionNotionIdeenliste, Hook-Pool, Content-Kalender, ProzessanweisungenGoogle DriveContent-Ablage (Stories, Reels, Karussells, Podcast) nummeriertChatGPTSkript-Erstellung, Hook-Prüfung, Blogpost, Karussell-SlidesOpus.ClipAutomatisches Reels-Schneiden aus YouTube-VideosCanvaDesign-ErstellungZapier / Make (Sapio)Automatisierung von Workflows zwischen ToolsMeta Business SuiteEinplanung von Beiträgen
+
+
+Fazit & Kernprinzipien
+
+
+Einmal erstellen – mehrfach nutzen: auf verschiedenen Plattformen UND zeitlich wiederholt
+Nie mehr arbeiten für mehr Output – Mehrarbeit fließt ins System, nicht in Mehrleistung
+Kreative Arbeit bleibt beim Creator, Systemarbeit wird outgesourct
+Umsatzziel: ca. 30.000 € Bruttoumsatz/Monat bei ≥70 % Umsatzrentabilität als sinnvolle Obergrenze
+Kein Ziel: maximaler Umsatz – Ziel ist Freiheit und skalierbares Leben
+System ist auch für Nachfolge/Verkauf der Personal Brand relevant → Übergabevideo empfohlen
+Zukunftsoption: System für eine zweite Nische wiederholen, sobald erste vollständig automatisiert

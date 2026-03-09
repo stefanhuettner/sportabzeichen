@@ -1,0 +1,174 @@
+﻿Zero Hassle System Video 3 System auf einen Blick
+
+
+Wissensdatenbank: Zero Hassle System – Video 3 (System auf einen Blick)
+
+
+Übersicht
+Video 3 zeigt den vollständigen Evergreen-Funnel des Zero Hassle Systems anhand eines konkreten Praxisbeispiels. Schwerpunkte sind der Aufbau eines automatisierten Workshop-Funnels, die Messung und Optimierung von Conversion-Punkten sowie der langfristige Skalierungsmechanismus durch Evergreen Content. Das Video liefert das operative Herzstück des Kurssystems.
+
+
+---
+
+
+Roter Faden als Systemgrundlage
+
+
+* Jeder Kontaktpunkt (Content, E-Mail, Landing Page, Workshop, Termine) muss **eine klare Transformation** kommunizieren
+* Kernfrage, die jeder Interessent sofort beantworten können soll: *„Wie würdest du in einem Satz zusammenfassen, was du bei mir lernst?"*
+* Beim ZHS lautet die Antwort: *„Ich lerne, wie ich mit einem Evergreen System viel Geld mit wenig Zeiteinsatz verdienen kann."*
+* Fehlt der rote Faden → funktioniert das gesamte System nicht mehr
+* Deshalb: **nur ein einziger Funnel** aufbauen (kein Parallel-Funnel)
+
+
+---
+
+
+Der Evergreen-Funnel im Überblick
+
+
+Stufe 1: Reichweite
+* Quellen: YouTube, Blog, Werbeanzeigen, Instagram Stories, Instagram Broadcasts, Reels, Podcast
+* Automatisierte Weiterleitung über **ManyChat** (Automatisierungstool) → auf Workshop oder Freebie
+* Alternativ: Links im Instagram-Profil, Blog, YouTube-Beschreibung, Podcast oder direkte Werbeanzeigen
+
+
+Stufe 2: Workshop-Anmeldung (Freebie)
+* Alle Reichweiten-Kanäle werden auf **einen kostenlosen Workshop** geleitet
+* Anmeldeprozess:
+  - Interessent wählt Termin, trägt sich ein
+  - Double-Opt-in (Pflicht in Deutschland): Bestätigungsmail via Webinaris
+  - Nach Bestätigung → eigene Danke/Bestätigungsseite (selbst gebaut)
+
+
+Stufe 3: Pre-Sale & Cross-Sell (vor dem Workshop)
+* **Pre-Sale-Angebot** direkt auf der Bestätigungsseite (z. B. Videokurs, Workbook) → typisch 39 €, heruntergesetzt
+* **Cross-Sell** über CopeCart: weiteres Angebot (z. B. 9 € oder 28 €) nach dem Kauf
+* Kaufquoten: ~10 % kaufen den Pre-Sale; davon ~60 % kaufen zusätzlich den Cross-Sell
+* Webinaris-E-Mails (automatisch): direkt nach Registrierung, 1 Tag vorher, 2 Stunden vorher, 15 Minuten vorher → enthalten jeweils erneut das Pre-Sale-Angebot
+* Empfehlung: Tripwire-Produkte zwischen 9 € und 49 € (kein teures Hauptprodukt als Add-on)
+
+
+Stufe 4: Workshop-Durchführung
+* Live oder automatisierter Evergreen-Workshop via Webinaris
+* Am Ende → direkte Weiterleitung zur **Sales Page** des Hauptprodukts
+
+
+Stufe 5: Post-Workshop-E-Mail-Sequenz
+* Alle Workshop-Teilnehmer werden via **Zapier** automatisch in **Mailchimp** (E-Mail-Liste) eingetragen
+* Danach: 5–7 tägliche E-Mails mit Verkaufsangeboten
+* Kaufen sie → Dankeseite (optional: Upsell/Abo/Mentoring)
+* Kaufen sie nicht → automatisch in den **Evergreen-Newsletter** (dauerhaft im System)
+
+
+Stufe 6: Evergreen-Newsletter-System
+* Enthält wiederkehrende Angebote: Hauptprodukt + verschiedene Tripwire-Produkte
+* Interessenten bleiben im System, bis sie sich aktiv austragen
+* Geschlossener Kreislauf: kein Interessent geht verloren
+
+
+---
+
+
+Conversion-Punkte & Tracking
+
+
+Wichtige Conversion-Stellen (in Reihenfolge)
+1. Reichweite → ManyChat-Klick (auf Workshop-Link)
+2. Seitenaufrufe Workshop-Landing-Page (getrackt via **Matomo** in WordPress)
+3. Workshop-Anmeldungen (getrackt in Webinaris)
+4. Tatsächliche Workshop-Teilnahme
+5. Aufrufe der Produktseite (CopeCart)
+6. Käufe auf CopeCart
+
+
+Praxisbeispiel (reale Zahlen)
+| Schritt | Zahl |
+|---|---|
+| Besucher Workshop-Seite | 3.385 |
+| Anmeldungen | 992 (29,31 %) |
+| Teilnehmer | 539 |
+| Produktseiten-Aufrufe | 370 |
+| Käufe (4 % Conversion) | ~15 |
+
+
+Tracking-Tool
+* Einfache **Google Sheets Tabelle** mit bedingter Formatierung (Farbskala)
+* Matomo für WordPress: zeigt eindeutige Seitenbesucher
+* Webinaris: zeigt Anmeldungen und Teilnahmen
+* CopeCart: zeigt Produktseiten-Aufrufe und Käufe
+
+
+Conversion-Richtwerte (Beispiel-Orientierung)
+* Workshop-Anmeldung organisch: ~60 % (Ads: ~30 %)
+* CopeCart-Conversion: ~4 % (laut Kursersteller bereits gut)
+* 29 % Workshop-Anmeldung = noch Optimierungspotenzial vorhanden
+
+
+---
+
+
+Conversion vs. Reichweite: Der Hebel-Effekt
+
+
+Kernthese
+* **Erst Conversion optimieren, dann Reichweite skalieren**
+* Conversion-Optimierung hat deutlich stärkere Hebelwirkung als Reichweiten-Steigerung
+
+
+Rechenbeispiel
+* +10 % Conversion → ~100 % mehr Verkäufe (Conversion-Hebel)
+* +10 % Reichweite → kaum messbare Verkaufssteigerung
+* Selbst +100 % Reichweite entspricht in der Wirkung nicht +10 % Conversion
+
+
+Praktische Konsequenz
+* Schlechte Conversion + mehr Reichweite = trotzdem kaum Verkäufe
+* Optimierungsreihenfolge: Conversion → Reichweite → wieder Conversion (Iteration)
+
+
+---
+
+
+Evergreen Content System: Skalierungsmechanismus
+
+
+Grundprinzip
+* Je mehr Evergreen Content vorhanden, desto höher die automatische Reichweite
+* Wachstum ist **exponentiell**: nach genug Content kann man doppelt so oft posten ohne neue Produktion
+
+
+Praxisbeispiel Stories
+* Ziel: 200 Evergreen Stories erstellen
+* Nach 200 Tagen: Neustart bei Story 1 → zweimal täglich posten möglich
+* Danach: Energie auf neue Plattform oder mehr Reels lenken
+
+
+Skalierungsreihenfolge (Kursersteller als Beispiel)
+7. E-Mails automatisieren
+8. Stories automatisieren
+9. Reels erstellen
+10. Blogartikel, YouTube, Podcast verbinden
+11. System läuft selbstständig
+
+
+Wettbewerbsvorteil
+* Konkurrenz kann nicht nachvollziehen, wie viel Content in kurzer Zeit entsteht
+* Nach 1 Jahr systemischen Evergreen-Aufbaus: in der Nische kaum mehr einholbar
+
+
+---
+
+
+Technologie-Stack im Funnel
+
+
+| Tool | Funktion |
+|---|---|
+| ManyChat | Automatisierte Weiterleitung von Social Media auf Freebie/Workshop |
+| Webinaris | Workshop-Hosting, Anmeldung, automatische E-Mails |
+| WordPress + Matomo | Landing Pages, Besuchertracking |
+| Zapier | Automatische Übertragung von Webinaris → Mailchimp |
+| Mailchimp | E-Mail-Marketing, Evergreen-Newsletter |
+| CopeCart | Checkout, Cross-Sell, Add-ons |
+| Google Sheets | Conversion-Tracking-Tabelle |

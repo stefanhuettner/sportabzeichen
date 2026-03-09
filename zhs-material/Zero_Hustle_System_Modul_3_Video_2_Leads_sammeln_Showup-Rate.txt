@@ -1,0 +1,190 @@
+﻿Zero Hustle System Modul 3 Video 2 Leads sammeln Showup-Rate erhöhen
+
+
+Wissensdatenbank: Zero Hassle System – Modul 3, Video 2 (Leads sammeln & Showup-Rate erhöhen)
+
+
+Übersicht
+Video 2 des Leads-Moduls erklärt, wie die Showup-Rate (Teilnahmequote) bei kostenlosen Workshops maximiert wird und wie Leads systematisch gesammelt werden. Kernthemen sind: E-Mail-Sequenz vor dem Workshop, Landing Page Optimierung, Tripwire-Upsells sowie Strategien zur Lead-Gewinnung. Das Video verbindet psychologische Prinzipien mit konkreter technischer Umsetzung in Webinaris.
+
+
+---
+
+
+Showup-Rate: Grundlagen & Zielbenchmark
+
+
+* Im Schnitt nehmen nur **~50 % der Angemeldeten** am Workshop teil
+* Benchmark: Showup-Rate sollte **nicht unter 40 %** sinken
+* Organisch erreichbar: **60 %+ Teilnahmequote** (bei Werbeanzeigen: ~40–45 %)
+* Der Unterschied zwischen 400 und 600 Teilnehmern bei 1.000 Anmeldungen ist ein echter Conversion-Hebel
+* Die Showup-Rate ist der **erste echte Conversion-Engpass** im Funnel
+
+
+Gründe für Nicht-Teilnahme
+* Äußere Umstände (krankes Kind, spontaner Besuch)
+* **Unlust** – der häufigere und beeinflussbare Grund → hier greift der rote Faden
+
+
+---
+
+
+Roter Faden als Show-up-Hebel
+
+
+Die Teilnehmerreise muss durchgehend konsistent sein:
+
+
+1. Content → ManyChat-Klick
+2. Landing Page → gleiches Versprechen wie im Content
+3. Bestätigungsmail → Vorfreude aufbauen
+4. Reminder-Mails → Interesse aufrechterhalten
+5. Erste 1–3 Minuten im Workshop → entscheiden über Verbleib
+6. Alle weiteren 5–10 Minuten → Rehooks halten die Leute
+
+
+Achtung: Kein Clickbait – Versprechen müssen der Wahrheit entsprechen. Im Zweifel lieber konservativer formulieren.
+
+
+Maßnahmen zur Vorfreude-Steigerung
+* Workshop-Testimonials auf der Landing Page oder in Reminder-Mails zeigen
+* Erfolgsgeschichten integrieren
+* Formulierungen wie: „Noch nie habe ich dieses Wissen preisgegeben" oder „Mit dem Wissen aus diesem Workshop verdiene ich X € im Monat"
+
+
+---
+
+
+E-Mail-Sequenz vor dem Workshop
+
+
+Übersicht der Mails
+| Mail | Zeitpunkt | Inhalt |
+|---|---|---|
+| Double-Opt-in | Sofort nach Eintragung | Bestätigung der E-Mail-Adresse |
+| Zugangsdaten-Mail | Nach Bestätigung | Zugangsdaten + Tripwire-Platzierung |
+| Erinnerung 1 | 2 Stunden vorher | Heiß machen, Nutzenversprechen |
+| Erinnerung 2 | 15 Minuten vorher | Dringlichkeit, Raum schließt pünktlich |
+| Nicht-Teilnahme-Mail | Nach verpasstem Termin | Link zur Aufzeichnung + erneuter Anmeldelink |
+
+
+Mail 1 – Zugangsdaten-Mail (nach Double-Opt-in)
+* Zugangsdaten für den Workshop
+* Termin-Eintrag in Kalender empfehlen
+* **Tripwire-Platzierung:** „Geheimtipp vorab exklusiv für dich" → Link zu Mini-Produkt (19–27 €)
+* Mögliche Tripwire-Ideen: Workshop-VIP-Package, Folien, Zusatzvideo, Workbook
+
+
+Mail 2 – Erinnerung (2 Stunden vorher)
+* Webinaris-Zugangsdaten wiederholen
+* Persönliche Story integrieren (Menschlichkeit schafft Vertrauen)
+* Nutzenversprechen: „Mit dem Wissen aus diesem Workshop verdiene ich X €/Monat"
+* Ankündigung weiterer Erinnerungsmail kurz vor Start
+
+
+Mail 3 – Erinnerung (15 Minuten vorher)
+* Dringlichkeit: „Raum schließt kurz nach dem Start"
+* Themenvorschau: Was wird im Workshop besprochen?
+* Kein hartes Triggering notwendig – einfache Erinnerungsmails funktionieren
+
+
+Nicht-Teilnahme-Mail
+* Link zu selbst gehosteter Aufzeichnungsseite (nicht Webinaris-Replay)
+* **Vorteil eigene Replay-Seite:** Teilnehmer können vorspulen (z. B. nach 30 Minuten eingestiegen)
+* Auf der Replay-Seite: Video, WhatsApp-Kontakt, direkter Link zum Angebot
+* Zusätzlich: erneuter Anmeldelink für Live-Workshop
+
+
+Warum Webinaris statt direkter Videoseite?
+* Besseres UTM-Tracking
+* **Dringlichkeit und Exklusivität:** Wer sich anmeldet, nimmt sich bewusst Zeit – das erhöht die Wertwahrnehmung
+
+
+---
+
+
+Terminplanung & Timing
+
+
+* Termin nie später als **72 Stunden** nach Anmeldung ansetzen (danach sinkt das Interesse stark)
+* Spontantermine erhöhen die Showup-Rate signifikant
+* Trotzdem nicht ausschließlich kurzfristige Termine anbieten – die meisten buchen für Feierabend, nächsten Tag oder Wochenende
+* Mindestens ein Slot **zwischen 18–21 Uhr** anbieten
+
+
+---
+
+
+Landing Page
+
+
+Organischer Traffic
+* Warme Zielgruppe kennt den Creator bereits → Landing Page weniger kritisch
+* Einfache, klare Seite reicht aus
+* Wichtig: Gleiches Versprechen wie im Content
+
+
+Paid Traffic (Werbeanzeigen)
+* Kalter Traffic = mehr Proof notwendig (Testimonials, Zahlen, Social Proof)
+* Schlechte Landing Page bei Ads = Streuverlust von Werbebudget
+
+
+Elemente einer funktionierenden Landing Page (Beispiel)
+* Starker Einstieg: „Andere verlangen 3.000 € für dieses Wissen – ich schenk's dir"
+* Klares Versprechen mit konkretem Ergebnis
+* Terminauswahl direkt eingebettet (via Webinaris)
+* Hinweis auf zeitliche Begrenzung des kostenlosen Zugangs
+* Optional: ausführlichere Seite erhöht Vorfreude und Spannung
+
+
+Kernaussage: Workshop muss aktiv „verkauft" werden – auch wenn er kostenlos ist. 60–90 Minuten Zeit ist heute eine echte Hürde.
+
+
+---
+
+
+Tripwire & Upsell vor dem Workshop
+
+
+Psychologischer Mechanismus
+* Wer einmal (auch klein) gekauft hat, hat die **Kaufentscheidung für diesen Anbieter bereits getroffen**
+* Erhöht die Empfänglichkeit für den Hauptkauf im Workshop – auch wenn dieser das 100-fache kostet
+* Steigert die **Kauflaune** vor dem Workshop
+
+
+Platzierung
+* Bestätigungsseite nach Anmeldung
+* Zugangsdaten-Mail + ggf. erste Erinnerungsmail
+
+
+Tripwire-Kriterien
+* Preisbereich: **7–27 €** (Nobrainer-Niveau)
+* Darf dem Hauptprodukt **nicht zu viel vorwegnehmen**
+* Darf nicht zu umfangreich oder aufwendig sein (sonst schwindet Lust auf Workshop)
+* Ideale Tripwires: Workbook zum Workshop, Vorlagen, Folien, VIP-Package
+
+
+Conversion-Richtwerte
+* Passendes Tripwire: **8–15 %** Kaufquote
+* Nicht abgestimmtes Tripwire: **2–6 %** Kaufquote
+
+
+---
+
+
+Lead-Sammlung: Traffic auf den Workshop lenken
+
+
+Grundprinzip
+* Jeden organischen Traffic **direkt auf den Workshop** schicken
+
+
+Zusätzliche Möglichkeiten
+* **Doppel-Freebie:** PDF-Checkliste als Freebie → leitet auf Workshop-Anmeldung
+* **Newsletter** mit Verweis auf Workshop
+* **Miniprodukt als Einstieg:** Käufer des Miniprodukts erhalten Workshop-Zugang als Bonus → erneute Kaufmöglichkeit im Workshop
+  - Praxisbeispiel: Minikurs per Ads beworben → Kurs endet mit Link zum kostenlosen Workshop → Workshop verkauft Hauptprodukt
+
+
+Ziel
+Je mehr Traffic auf den Workshop, desto mehr potenzielle Hauptprodukt-Käufer → maximalen Traffic auf einen einzigen Conversion-Punkt konzentrieren

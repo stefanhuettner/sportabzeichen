@@ -1,0 +1,32 @@
+﻿Low-Budget Funnel
+
+
+Ich lese öfter die Frage nach einem Funnel, der anfangs günstiger ist. Eine ausgezeichnete Frage – und der perfekte Anlass, einmal klarzustellen, wann sich professionelle Tools überhaupt lohnen.
+Professionelle Tools
+Man holt sie sich aus drei Gründen: CRM, Komfort und Tracking.
+Als Beispiel nehme ich Webinaris.
+Klar, du kannst ein langes Video auch bei YouTube privat hosten und den Link verschicken. Oder du stellst es auf eine einfache Webseite – genau so macht man es auch bei einem VSL-Funnel*.Das funktioniert, aber du verlierst Conversion und vor allem fehlt dir:
+CRM:Du kannst deine Zuschauer nicht wirklich erfassen → kein E-Mail-Marketing.
+Komfort:Ein Video bei YouTube auszutauschen ist umständlich (neuer Link).Conversion-Features wie Buttons im Video oder automatische Chat-Nachrichten fehlen komplett.
+Tracking:Du siehst nicht, woher die Leute kommen → keine Chance auf sinnvolles Tracking (z. B. für Ads).
+Ich gebe selbst über 10.000 € pro Jahr für Tools aus. Natürlich braucht man nicht alles sofort. Deshalb hier meine MUST-Haves:
+ManyChat
+Mailchimp (oder vergleichbar)
+Zapier
+Danach kommen:
+Webinaris
+Google Sheets + Google Drive
+Eine Kursplattform (zur Not kostenlos über einfache Webseiten darstellbar)
+Also: Macht euch nicht verrückt. Man kann auch für 0 € einen automatisierten Funnel aufbauen – Beispiel: die First-Mover-Masterclass im Business Booster.
+Case aus der Praxis
+Ein Bekannter wollte einen Workshop verkaufen, ohne Tools zu kaufen. Sein Funnel sah so aus:
+Content → YouTube-Video (privat gehostet) → Link direkt zu CopeCart zum Kauf
+Am Ende hatte er nur die Kundendaten, aber keine Interessentendaten. Trotzdem war es ein kompletter Funnel – minimalistisch, aber funktional.
+Beispiel: VSL-Funnel (Video Sales Funnel)
+So kannst du ihn easy auf Webseiten aufbauen:
+Video 1: Landingpage mit ca. 15 Min. Video, darunter Button zum zweiten Video
+Video 2: Workshop-Video (60–90 Min.), darunter Button zum Abschlussvideo
+Video 3: Transformation + Verkauf, darunter Kaufbutton
+Tracking:Über die Landingpage kannst du ein Opt-in einbauen, damit die Leute ihre E-Mail angeben.Oder du setzt einfach Retargeting-Ads auf die Besucher der einzelnen Seiten (z. B. ab Video 2, wenn sie schon Interesse gezeigt haben).
+Was ich damit sagen will: Mein Funnel ist nur ein Beispiel. Es gibt Millionen Möglichkeiten.Das Wichtigste ist immer:
+👉 Schickt eure Leads automatisiert an einen Ort, wo sie etwas konsumieren oder kaufen können.
