@@ -41,3 +41,10 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Slack cross-context: message-Tool geht nicht von Telegram aus, stattdessen curl direkt an Slack API
 - Second Brain Protocol implementiert ✅ (08.03.2026) — COMMANDS.md, Compaction Handling, Auto-Save, Context % Display
 - Google Drive ZHS-Ordner: https://drive.google.com/drive/folders/1gfmAUWq7niwmsjrKo8hLOq1rlUAATmhf
+- Google Gemini API eingerichtet ✅ (09.03.2026) — Projekt "Pia", Budget 1€, Quota pendelt noch
+- Nano Banana Pro (Bildgenerierung) eingerichtet ✅ (09.03.2026) — wartet auf Quota
+- Telegram Streaming abgeschaltet (09.03.2026) — channels.telegram.streaming: "off"
+- commands.config: true (09.03.2026) — /config im Chat verfügbar
+- ZHS-Wissensbasis: 50 Dokumente geladen, zusammengefasst, in Notion + lokal
+- Hosting: dogado Shared Hosting, web314.dogado.net, FTP-Credentials in /root/.openclaw/.ftp-creds
+- Lessons Learned Datei: memory/lessons-learned.md — Fehler dokumentieren, nie wiederholen
