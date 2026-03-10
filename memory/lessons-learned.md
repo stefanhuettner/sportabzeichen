@@ -28,6 +28,12 @@ _Jedes gelöste Problem wird hier dokumentiert. Pia checkt diese Liste bevor sie
 - **Lösung:** Alle 6 Channels mit `allow: true, requireMention: false` hinzugefügt
 - **Merke:** Neue Slack-Channels immer auch in der Config freischalten
 
+### Keine Markdown-Tabellen in Telegram
+- **Problem:** Tabellen werden als hässlicher Monospace-Text angezeigt
+- **Ursache:** Telegram unterstützt keine Markdown-Tabellen
+- **Lösung:** Listen verwenden (✅/🚫 + Bullet Points). Tabellen nur in Notion + Slack.
+- **Merke:** Immer ans Ausgabeformat denken!
+
 ### Token-Verschwendung durch Brute-Force-Debugging
 - **Problem:** Hoher Token-Verbrauch an einem Tag
 - **Ursache:** Config-Docs 5x geladen, dutzende FTP-Varianten durchprobiert statt zu fragen
