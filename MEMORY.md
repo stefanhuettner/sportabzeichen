@@ -58,3 +58,5 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Google Drive: Öffentliche Links geschlossen, Zugang jetzt über piagiraffe04@gmail.com Einladung → OAuth2 nötig
 - dogado E-Mail pia@stefanhuettner.de gelöscht (MX zeigt auf Google Workspace)
 - Stefan hat Google Workspace für stefanhuettner.de (Business Standard, 16,20€/Mo)
+- Hetzner Cloud Firewall aktiv: nur TCP 2222 + ICMP, alles andere blockiert
+- ufw/iptables geht nicht auf Hetzner (Kernel-Einschränkung) → Hetzner Cloud Firewall nutzen
