@@ -60,3 +60,8 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Stefan hat Google Workspace für stefanhuettner.de (Business Standard, 16,20€/Mo)
 - Hetzner Cloud Firewall aktiv: nur TCP 2222 + ICMP, alles andere blockiert
 - ufw/iptables geht nicht auf Hetzner (Kernel-Einschränkung) → Hetzner Cloud Firewall nutzen
+- Notion "Stefans To-Dos" DB: 49c0cc2d-76c0-4318-af06-da2fb00dccaf (Top 3 + Optional nach jeder Nachtschicht)
+- Tagesrhythmus: 06:00 Morgen-Briefing, 20:00 Abend-Report
+- Susanne: Slack + Notion Gast-Zugriff eingerichtet ✅
+- Notion API Lesson: Properties über 2022-06-28 API Version updaten, 2025-09-03 ignoriert sie beim Create
+- Notion scraping: undokumentierte API www.notion.so/api/v3/loadPageChunk für öffentliche Seiten
