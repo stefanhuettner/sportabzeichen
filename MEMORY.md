@@ -53,3 +53,8 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Gmail Account: piagiraffe04@gmail.com — App-Passwort in .gmail-creds, IMAP verbunden
 - Google Drive Wissensbasis-Ordner: https://drive.google.com/drive/folders/16EPViHuPoRD-MJwcVe3dXmbsni1L44CR (Löwenstark Kurs + ZHS Hintergrund)
 - Referenzfotos: assets/stefan/ (4 Fotos) + assets/susanne/ (3 Fotos)
+- Kalender-Zugang: 3 iCloud webcal-Links (Familie, PSBK, Privat) in .calendar-links — direkt lesbar
+- Google Kalender (Starkmacher + #kinderleicht): Einladungen da, braucht OAuth2
+- Google Drive: Öffentliche Links geschlossen, Zugang jetzt über piagiraffe04@gmail.com Einladung → OAuth2 nötig
+- dogado E-Mail pia@stefanhuettner.de gelöscht (MX zeigt auf Google Workspace)
+- Stefan hat Google Workspace für stefanhuettner.de (Business Standard, 16,20€/Mo)
