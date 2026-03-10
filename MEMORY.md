@@ -50,3 +50,6 @@ Stefan hat klar definiert, was er von mir erwartet:
 - dogado Ordner: diestarkmacherde, susannehuettnerde, kinderleichtmitsusannede, stefanhuettnerde, susannehuettnercom, susanne-kinderleichtde
 - MailerLite: 2 Accounts (MAILERLITE_TOKEN_KINDERLEICHT + MAILERLITE_TOKEN_STARKMACHER), IP-restricted auf 178.104.16.167
 - Lessons Learned Datei: memory/lessons-learned.md — Fehler dokumentieren, nie wiederholen
+- Gmail Account: piagiraffe04@gmail.com — App-Passwort in .gmail-creds, IMAP verbunden
+- Google Drive Wissensbasis-Ordner: https://drive.google.com/drive/folders/16EPViHuPoRD-MJwcVe3dXmbsni1L44CR (Löwenstark Kurs + ZHS Hintergrund)
+- Referenzfotos: assets/stefan/ (4 Fotos) + assets/susanne/ (3 Fotos)
