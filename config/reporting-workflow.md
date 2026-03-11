@@ -56,3 +56,18 @@
 2. Gepinnte Nachricht in #susannes-bereich aktualisieren (mit Link)
 3. Kurze Info in #susannes-bereich posten ("Neues Dokument: ...")
 → Das passiert OHNE Erinnerung, automatisch!
+
+## Stefans Aufgaben (NEU — ersetzt Notion To-Dos!)
+- **Slack #stefans-aufgaben** (C0AL0FA7QH0) = Stefans To-Do Channel
+- Gepinnte Nachricht = aktuelle Aufgabenliste
+- Format: 🔴 Prio 1 / 🟠 Prio 2 / 🟡 Prio 3 / 🟢 Optional / ✅ Erledigt
+- Jede Aufgabe mit: Datum (seit wann) + Deadline (bis wann) + Link zum Dokument
+- Links zeigen auf Google Drive (für Stefan + Susanne) ODER Notion (für Detailseiten)
+- Automatisch aktualisieren nach jeder Nachtschicht + bei Änderungen
+
+## Google Drive als zentrale Plattform
+- Dokumente als Google Docs (statt Notion) — Stefan + Susanne kennen Drive
+- Google Sheets für Tabellen/Listen
+- Google Slides für Präsentationen
+- Notion bleibt als Pias Backend (Redaktionskalender, Datenbanken)
+- Alles was Stefan/Susanne sehen muss → in Drive ablegen
