@@ -42,3 +42,17 @@
 - Kann Seiten NICHT zwischen Parents verschieben
 - Kann KEINE Views/Ansichten erstellen (nur in Notion-App)
 - Neue Berichte als Unterseiten unter "Berichte" anlegen (parent: Berichte-ID)
+
+## Susannes Workflow
+- **Slack #susannes-bereich** (C0AKJ8WA6UF) = ihr einziger Kanal
+- **Google Drive "Für Susanne"** = alle fertigen Dokumente als Google Docs
+  - Ordner: https://drive.google.com/drive/folders/1VgN_KHJHLxF5rECI_op-25GWvzHFLwrV
+  - Unterordner: Skripte & Texte, Reel-Vorlagen, Newsletter, Bilder & Design
+- Gepinnte Nachricht in #susannes-bereich = ihr Dashboard (mit Drive-Links!)
+- Susanne kann direkt in Google Docs kommentieren
+
+## AUTOMATISCH bei jedem neuen #kinderleicht-Dokument:
+1. Als Google Doc in "Für Susanne" hochladen (passender Unterordner)
+2. Gepinnte Nachricht in #susannes-bereich aktualisieren (mit Link)
+3. Kurze Info in #susannes-bereich posten ("Neues Dokument: ...")
+→ Das passiert OHNE Erinnerung, automatisch!
