@@ -71,3 +71,31 @@
 - Google Slides für Präsentationen
 - Notion bleibt als Pias Backend (Redaktionskalender, Datenbanken)
 - Alles was Stefan/Susanne sehen muss → in Drive ablegen
+
+## KISS-Prinzip: Stefans Arbeitsweise
+Stefan arbeitet NUR mit: Slack + Google Drive + Telegram
+Kein Notion für Stefan nötig. Notion = Pias Backend.
+
+### #stefans-aufgaben — Aufbau der gepinnten Nachricht:
+1. Aufgaben nach Projekt sortiert:
+   - 👨‍👩‍👧‍👦 #kinderleicht
+   - 🦁 Löwenstark
+   - 🏫 PSBK / Schule
+   - 🏠 Privat
+   - 🔧 Setup / Technik
+2. 💡 Ideen-Sammlung (Stefan diktiert rein, Pia sortiert ein)
+3. ✅ Erledigt (bleibt sichtbar als Motivation)
+
+### Wenn Stefan eine Idee/Aufgabe reinschreibt:
+1. Nachricht lesen
+2. In gepinnte Nachricht einsortieren (richtiges Projekt, richtige Prio)
+3. Falls Dokument nötig → in Drive anlegen und verlinken
+4. Kurze Bestätigung an Stefan
+
+### Stefans Tools:
+- Telegram = Dialog mit Pia (Morgen-Briefing, Abend-Report, Zwischendurch)
+- Slack #stefans-aufgaben = To-Dos + Ideen (alles an einem Ort)
+- Slack #kinderleicht, #loewenstark etc. = Projekt-Status (gepinnte Updates)
+- Slack #susannes-bereich = Susannes Kanal
+- Google Drive = Dokumente lesen/bearbeiten
+- Notion = NICHT NÖTIG (Pias Backend)
