@@ -65,3 +65,13 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Susanne: Slack + Notion Gast-Zugriff eingerichtet ✅
 - Notion API Lesson: Properties über 2022-06-28 API Version updaten, 2025-09-03 ignoriert sie beim Create
 - Notion scraping: undokumentierte API www.notion.so/api/v3/loadPageChunk für öffentliche Seiten
+- Google OAuth2 eingerichtet ✅ (11.03.2026) — Scopes: Drive (rw), Calendar (ro), Gmail (ro)
+- OAuth Client: "Pia Server" (Desktop-App), Client ID: 809456498194-...apps.googleusercontent.com
+- OAuth Tokens: /root/.openclaw/.google-tokens.json (mit Refresh Token), OAuth Config: .google-oauth.json
+- Token-Refresh Script: /root/.openclaw/refresh-google-token.py
+- Redirect für OAuth: localhost (nicht oob, wird von Google nicht mehr unterstützt)
+- Google Drive: 7 Ordner angelegt, IDs in /root/.openclaw/.drive-folders.json
+- Google Calendar API: aktiviert, Starkmacher/#kinderleicht müssen noch neu geteilt werden
+- Wöchentlicher Security-Audit Cron: Samstag 03:00 Berlin (eingerichtet 11.03.2026)
+- Slack Token: nicht als env var verfügbar, aus openclaw.json lesen
+- Telegram Bot-Limit: kann nur eigene + kürzlich empfangene Nachrichten löschen, nicht User-Nachrichten
