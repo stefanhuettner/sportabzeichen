@@ -75,3 +75,37 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Wöchentlicher Security-Audit Cron: Samstag 03:00 Berlin (eingerichtet 11.03.2026)
 - Slack Token: nicht als env var verfügbar, aus openclaw.json lesen
 - Telegram Bot-Limit: kann nur eigene + kürzlich empfangene Nachrichten löschen, nicht User-Nachrichten
+
+## Workflow-Revolution (11.03.2026 abends)
+
+### Stefan arbeitet NUR mit: Slack + Google Drive + Telegram
+- **Notion braucht Stefan NICHT mehr** — ist nur noch Pias Backend
+- Nachtschicht-Berichte → Google Drive (als Google Docs)
+- Stefans To-Dos → Slack #stefans-aufgaben (gepinnte Nachricht)
+- Susannes Aufgaben → Slack #susannes-bereich (gepinnte Nachricht mit Aufgaben)
+- Alle Dokumente für Stefan/Susanne → Google Drive "Für Susanne" bzw. Projekt-Ordner
+- Slack-Channels mit gepinnten Status-Nachrichten = Dashboard
+
+### Neue Channels:
+- #stefans-aufgaben (C0AL0FA7QH0, Pin ts: 1773254786.993119) — nach Projekten: kinderleicht, Löwenstark, PSBK, Privat, Technik + Ideen-Sammlung
+- #susannes-bereich (C0AKJ8WA6UF, Pin ts: 1773249065.338729) — Aufgaben + Drive-Links + Status
+
+### Markenunterlagen erhalten:
+- #kinderleicht: Warm/Rosa/Beige (#698ba4, #e1d0c6, #d32b87 Pink)
+- Starkmacher: Petrol/Navy (#006884, #053d57, #97bcc7)
+- Logos + Brand Guide in assets/marken/
+
+### NotebookLM:
+- Zugang steht ✅ (PW: pIagiraffe!10)
+- Chrome-Session: /root/.openclaw/.chromium-notebooklm-session
+- 6+ leere Notebooks warten auf Quellen
+- Zugang über Playwright + Xvfb (noVNC nur für Stefan-Login nötig)
+
+### Google Drive Ordner "Für Susanne":
+- Folder: 1VgN_KHJHLxF5rECI_op-25GWvzHFLwrV
+- Geteilt mit susanne@susannehuettner.de (Kommentator)
+- Unterordner: Skripte & Texte, Reel-Vorlagen, Newsletter, Bilder & Design
+
+### PW-Änderung:
+- pia@stefanhuettner.de PW: pIagiraffe!10 (geändert 11.03.2026)
+- App-Passwort bleibt: khok boxv akdo fjtw
