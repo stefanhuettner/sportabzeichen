@@ -61,6 +61,7 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Hetzner Cloud Firewall aktiv: nur TCP 2222 + ICMP, alles andere blockiert
 - ufw/iptables geht nicht auf Hetzner (Kernel-Einschränkung) → Hetzner Cloud Firewall nutzen
 - Notion "Stefans To-Dos" DB: 49c0cc2d-76c0-4318-af06-da2fb00dccaf (Top 3 + Optional nach jeder Nachtschicht)
+- Löwenstark Preisstruktur → SINGLE SOURCE OF TRUTH: Google Doc "Preisstruktur Löwenstark 2026" (ID: 1g9ufW_S7KOVhFa3Ur7yAEQiQZHjcpfmWlvVxXIqCdAI) im Ordner 01 Löwenstark. Alle Preisdiskussionen → dieses Dokument aktualisieren!
 - Tagesrhythmus: 06:00 Morgen-Briefing, 20:00 Abend-Report
 - Susanne: Slack + Notion Gast-Zugriff eingerichtet ✅
 - Notion API Lesson: Properties über 2022-06-28 API Version updaten, 2025-09-03 ignoriert sie beim Create
