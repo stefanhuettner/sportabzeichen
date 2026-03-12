@@ -56,7 +56,7 @@ Hallo {$name|du},
 
 ich möchte dir etwas erzählen, das bei mir als Mama alles verändert hat.
 
-**Mein Sohn, damals 4, hat mich angeschrien: "Du bist die blödeste Mama der Welt!"**
+**Meine Tochter, damals 4, hat mich angeschrien: "Du bist die blödeste Mama der Welt!"**
 
 Mein erster Impuls? Wut. Verletzung. Der Gedanke: "Ich geb hier alles und DAS ist der Dank?"
 

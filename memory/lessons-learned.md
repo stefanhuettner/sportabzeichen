@@ -67,3 +67,14 @@ _Jedes gelöste Problem wird hier dokumentiert. Pia checkt diese Liste bevor sie
 - **Ursache:** Picker zeigt nur 50 Dateien pro Ordner. NotebookLM Bestätigungsdialog beim Löschen blockiert Playwright-Scripts.
 - **Lösung:** Überzählige Dateien in Drive-Unterordner kopieren, dann Batch 2 separat laden.
 - **Merke:** Bei >50 Dateien: aufteilen in Unterordner à max 50. NIE 2x Ctrl+A aus gleichem Ordner → erzeugt Duplikate die schwer zu löschen sind.
+
+### Änderungen an Dokumenten = Google Doc (12.03.2026)
+- Wenn Susanne (oder Stefan) sagt "ändere das" bei einem Dokument → IMMER zuerst das Google Doc ändern, nicht nur die lokale Datei
+- Die lokale Datei ist mein Arbeitsverzeichnis, aber Susanne/Stefan arbeiten mit Google Docs
+- Workflow: Google Doc API → dann lokale Datei synchronisieren
+
+### Keine Duplikate in Google Drive (12.03.2026)
+- 9 Duplikate gelöscht — entstanden durch doppeltes Hochladen (2 Upload-Batches am gleichen Tag)
+- **REGEL**: Vor jedem Upload prüfen, ob das Dokument bereits existiert (Name + Ordner)
+- **REGEL**: Ein Dokument = ein Ort. Immer nur eine Version. Alle Links zeigen auf dieselbe ID.
+- Gelöschte Duplikate waren die 16:17-Uhr-Batch (zweiter Upload), behalten wurden die verlinkten Versionen aus Status-Docs + Susannes Aufgaben
