@@ -2,6 +2,14 @@
 
 _Jedes gelöste Problem wird hier dokumentiert. Pia checkt diese Liste bevor sie etwas umsetzt._
 
+## 12.03.2026
+
+### Google Docs: Links immer klickbar machen!
+- Wenn ich URLs in Google Docs einfüge (via insertText), sind sie NUR Plaintext — NICHT klickbar
+- IMMER danach `updateTextStyle` mit `link.url` auf den URL-Bereich anwenden
+- Stefan will solche Details nicht selbst im Kopf behalten müssen → meine Verantwortung
+- Gilt für ALLE Google Docs die ich erstelle oder bearbeite
+
 ## 09.03.2026
 
 ### Notion-Formatierung kaputt

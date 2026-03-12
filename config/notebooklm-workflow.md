@@ -9,7 +9,7 @@ Das schont Ressourcen — ich lade nur das Wissen, das gerade relevant ist.
 
 | Projekt/Aufgabe | Notebook(s) abrufen |
 |---|---|
-| #kinderleicht Content (Reels, Newsletter) | ZHS Content Framework, #kinderleicht Marke |
+| #kinderleicht Content (Reels, Newsletter) | ZHS Content Framework, #kinderleicht Marke, KI Creator Academy |
 | #kinderleicht Freebie/Lead Magnet | #kinderleicht Freebies, ZHS System & Strategie |
 | #kinderleicht Webinar | #kinderleicht Webinar |
 | #kinderleicht Membership | #kinderleicht membership |

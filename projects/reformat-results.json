@@ -1,0 +1,107 @@
+{
+  "results": [
+    {
+      "name": "Website-Analyse diestarkmacher.de & kinderleicht",
+      "changes": 42,
+      "status": "ok"
+    },
+    {
+      "name": "Eltern-Onlinekurs L\u00f6wenstark \u2014 Konzept",
+      "changes": 60,
+      "status": "ok"
+    },
+    {
+      "name": "L\u00f6wenstark Angebotsseiten-Texte",
+      "changes": 121,
+      "status": "ok"
+    },
+    {
+      "name": "Funnel-Strategie #kinderleicht",
+      "changes": 40,
+      "status": "ok"
+    },
+    {
+      "name": "Lead Magnet #kinderleicht \u2014 Entwurf",
+      "changes": 53,
+      "status": "ok"
+    },
+    {
+      "name": "Reel-Skripte #kinderleicht M\u00e4rz 2026",
+      "changes": 71,
+      "status": "ok"
+    },
+    {
+      "name": "E-Mail Welcome Sequence #kinderleicht",
+      "changes": 104,
+      "status": "ok"
+    },
+    {
+      "name": "Hackpack Wutanfall-Notfallkoffer",
+      "changes": 122,
+      "status": "ok"
+    },
+    {
+      "name": "Webinar-Konzept: Wutanf\u00e4lle verstehen",
+      "changes": 78,
+      "status": "ok"
+    },
+    {
+      "name": "P\u00e4dagogische Profilanalyse #kinderleicht",
+      "changes": 91,
+      "status": "ok"
+    },
+    {
+      "name": "Recherche Mama-Sprache & Wut",
+      "changes": 70,
+      "status": "ok"
+    },
+    {
+      "name": "Wutanfall-Typen-Test \u2014 Freebie-Konzept",
+      "changes": 0,
+      "status": "error: 400 Client Error: Bad Request for url: https://docs.googleapis.com/v1/documents/1DUPKCRDpU42QNkF56cdcouK3_J4j3umHdnkLRkDaK2g:batchUpdate"
+    },
+    {
+      "name": "Gesamtstrategie & Umsatzziel",
+      "changes": 48,
+      "status": "ok"
+    },
+    {
+      "name": "Produkt-Treppe Gesamt\u00fcbersicht",
+      "changes": 29,
+      "status": "ok"
+    },
+    {
+      "name": "Content-Plan Instagram 30 Tage",
+      "changes": 70,
+      "status": "ok"
+    },
+    {
+      "name": "Instagram Profilanalyse & Content-Strategie",
+      "changes": 71,
+      "status": "ok"
+    },
+    {
+      "name": "Redaktionskalender M\u00e4rz 2026",
+      "changes": 92,
+      "status": "ok"
+    },
+    {
+      "name": "Farbpaletten-\u00dcberarbeitung 2026",
+      "changes": 72,
+      "status": "ok"
+    },
+    {
+      "name": "Preisstruktur",
+      "changes": 0,
+      "status": "ok"
+    }
+  ],
+  "total_changes": 1234,
+  "docs_changed": 17,
+  "errors": [
+    {
+      "name": "Wutanfall-Typen-Test \u2014 Freebie-Konzept",
+      "error": "400 Client Error: Bad Request for url: https://docs.googleapis.com/v1/documents/1DUPKCRDpU42QNkF56cdcouK3_J4j3umHdnkLRkDaK2g:batchUpdate"
+    }
+  ]
+}
