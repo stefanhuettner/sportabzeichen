@@ -98,8 +98,13 @@ Stefan hat klar definiert, was er von mir erwartet:
 ### NotebookLM:
 - Zugang steht ✅ (PW: pIagiraffe!10)
 - Chrome-Session: /root/.openclaw/.chromium-notebooklm-session
-- 6+ leere Notebooks warten auf Quellen
 - Zugang über Playwright + Xvfb (noVNC nur für Stefan-Login nötig)
+- **Workflow**: VOR jeder Projektarbeit passendes Notebook abfragen → spart Ressourcen, lädt nur relevantes Wissen
+- **Pflege**: Stefan + Pia füllen gemeinsam. Pia lädt eigene Dokumente/Recherchen hoch. Wöchentlicher Review (Sonntag).
+- **Zuordnung**: siehe config/notebooklm-workflow.md
+- ZHS System & Strategie: 57 Quellen ✅ (Notebook-ID: 3a24bb2c)
+- Löwenstark Kita-Kurs: 18 Quellen ✅
+- Restliche 13 Notebooks: werden von Stefan befüllt
 
 ### Google Drive Ordner "Für Susanne":
 - Folder: 1VgN_KHJHLxF5rECI_op-25GWvzHFLwrV
