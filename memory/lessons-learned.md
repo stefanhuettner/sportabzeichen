@@ -51,3 +51,11 @@ _Jedes gelöste Problem wird hier dokumentiert. Pia checkt diese Liste bevor sie
 - **Ursache:** Bericht direkt im Cron-Job gesendet statt zeitversetzt
 - **Lösung:** Bericht in Datei vorbereiten, separaten Cron für 7:00 Uhr einrichten
 - **Merke:** Nachtarbeit = still arbeiten, Ergebnisse morgens um 7:00 liefern
+
+## 12.03.2026
+
+### NotebookLM: Picker-Limit & Duplikate
+- **Problem:** Ctrl+A im Drive-Picker wählt max 50 Dateien. Bei 57 Dateien fehlten 7. Zweiter Ctrl+A erzeugte 49 Duplikate die sich nicht automatisch löschen ließen.
+- **Ursache:** Picker zeigt nur 50 Dateien pro Ordner. NotebookLM Bestätigungsdialog beim Löschen blockiert Playwright-Scripts.
+- **Lösung:** Überzählige Dateien in Drive-Unterordner kopieren, dann Batch 2 separat laden.
+- **Merke:** Bei >50 Dateien: aufteilen in Unterordner à max 50. NIE 2x Ctrl+A aus gleichem Ordner → erzeugt Duplikate die schwer zu löschen sind.
