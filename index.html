@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsches Sportabzeichen – Anforderungen</title>
+<style>
+  :root {
+    --primary: #005a8c;
+    --primary-light: #e8f4fc;
+    --gold: #c9a227;
+    --silver: #8a8d8f;
+    --bronze: #b87333;
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --text-muted: #6b7280;
+    --border: #e2e8f0;
+    --success: #10b981;
+    --warning: #f59e0b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    padding: 30px 20px 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, #003d5c 100%);
+    color: white;
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0,90,140,0.3);
+  }
+
+  header h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  header p {
+    opacity: 0.85;
+    font-size: 0.95em;
+  }
+
+  .selector {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: end;
+  }
+
+  .field {
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .field label {
+    display: block;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .field select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    font-size: 1em;
+    background: white;
+    color: var(--text);
+    cursor: pointer;
+    transition: border-color 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+
+  .field select:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+
+  .info-banner {
+    background: var(--primary-light);
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+  }
+
+  .info-banner strong { color: var(--primary); }
+
+  .age-note {
+    background: #fef3c7;
+    border-left: 4px solid var(--warning);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+  }
+
+  .group-card {
+    background: var(--card);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+
+  .group-header {
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 1.05em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+  }
+
+  .group-header:hover {
+    background: rgba(0,0,0,0.02);
+  }
+
+  .group-header .icon {
+    font-size: 1.3em;
+  }
+
+  .group-header .badge {
+    margin-left: auto;
+    font-size: 0.75em;
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+  }
+
+  .group-body {
+    padding: 0 20px 20px;
+  }
+
+  .discipline {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .discipline:last-child { margin-bottom: 0; }
+
+  .disc-name {
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 0.92em;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .disc-name .indoor-tag {
+    font-size: 0.75em;
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+
+  .levels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 0;
+  }
+
+  .level {
+    text-align: center;
+    padding: 10px 8px;
+    border-top: 1px solid var(--border);
+  }
+
+  .level:not(:last-child) {
+    border-right: 1px solid var(--border);
+  }
+
+  .level-label {
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .level-bronze .level-label { color: var(--bronze); }
+  .level-silver .level-label { color: var(--silver); }
+  .level-gold .level-label { color: var(--gold); }
+
+  .level-value {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .turn-section {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 12px;
+  }
+
+  .turn-section h4 {
+    font-size: 0.9em;
+    color: #166534;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .turn-detail {
+    margin-bottom: 12px;
+  }
+
+  .turn-detail:last-child { margin-bottom: 0; }
+
+  .turn-level-label {
+    font-weight: 700;
+    font-size: 0.82em;
+    margin-bottom: 4px;
+  }
+
+  .turn-level-label.bronze { color: var(--bronze); }
+  .turn-level-label.silver { color: var(--silver); }
+  .turn-level-label.gold { color: var(--gold); }
+
+  .turn-detail ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .turn-detail li {
+    font-size: 0.88em;
+    padding: 2px 0 2px 18px;
+    position: relative;
+    color: #374151;
+  }
+
+  .turn-detail li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+  }
+
+  .swim-section {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 16px;
+  }
+
+  .swim-section h4 {
+    font-size: 0.9em;
+    color: #1e40af;
+    margin-bottom: 6px;
+  }
+
+  .swim-section p {
+    font-size: 0.88em;
+    color: #374151;
+  }
+
+  .scoring {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  .scoring h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .score-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .score-item {
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid;
+  }
+
+  .score-bronze { border-color: var(--bronze); background: #fef3e2; }
+  .score-silver { border-color: var(--silver); background: #f3f4f6; }
+  .score-gold { border-color: var(--gold); background: #fefce8; }
+
+  .score-item .medal { font-size: 1.4em; }
+  .score-item .points { font-size: 0.82em; font-weight: 600; margin-top: 4px; }
+
+  .safety-note {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 12px;
+    font-size: 0.85em;
+    color: #991b1b;
+  }
+
+  .turn-links {
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #ecfdf5;
+    border-radius: 8px;
+  }
+
+  .turn-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #047857;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    background: white;
+    border: 1px solid #a7f3d0;
+    transition: background 0.15s;
+  }
+
+  .turn-links a:hover {
+    background: #d1fae5;
+    text-decoration: none;
+  }
+
+  .hidden { display: none; }
+
+  #results { transition: opacity 0.3s; }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.8em;
+  }
+
+  footer a { color: var(--primary); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .selector { flex-direction: column; }
+    header h1 { font-size: 1.3em; }
+    .score-grid { grid-template-columns: 1fr; }
+    .container { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏅 Deutsches Sportabzeichen</h1>
+  <p>Anforderungen & Disziplinen</p>
+</header>
+
+<div class="container">
+  <div class="selector">
+    <div class="field">
+      <label>Geschlecht</label>
+      <select id="gender" onchange="updateResults()">
+        <option value="">– Bitte wählen –</option>
+        <option value="w">Weiblich</option>
+        <option value="m">Männlich</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Alter</label>
+      <select id="age" onchange="updateResults()">
+        <option value="">– Bitte wählen –</option>
+        <option value="16-17">16–17 Jahre</option>
+        <option value="18-19">18–19 Jahre</option>
+        <option value="20-24">20–24 Jahre</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="results" class="hidden">
+    <div id="age-note-container"></div>
+
+    <div class="info-banner">
+      <strong>Regel:</strong> Aus <strong>jeder</strong> der 4 Gruppen <strong>eine</strong> Disziplin wählen + Schwimmnachweis erbringen.
+    </div>
+
+    <div id="groups-container"></div>
+
+    <div id="swim-container"></div>
+
+    <div class="scoring">
+      <h3>📊 Gesamtwertung</h3>
+      <div class="score-grid">
+        <div class="score-item score-bronze">
+          <div class="medal">🥉</div>
+          <div><strong>Bronze</strong></div>
+          <div class="points">je 1 Punkt · mind. 4 Pkt</div>
+        </div>
+        <div class="score-item score-silver">
+          <div class="medal">🥈</div>
+          <div><strong>Silber</strong></div>
+          <div class="points">je 2 Punkte · mind. 8 Pkt</div>
+        </div>
+        <div class="score-item score-gold">
+          <div class="medal">🥇</div>
+          <div><strong>Gold</strong></div>
+          <div class="points">je 3 Punkte · mind. 11 Pkt</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Quelle: <a href="https://deutsches-sportabzeichen.de/materialien" target="_blank">DOSB Leistungskatalog 2025</a> ·
+  <a href="https://cdn.dosb.de/Relaunch_2024/Sportabzeichen/Materialien_2025/DSA-Leitfaden_fuer_PrueferInnen_zu_den_Turn-Aufgaben_2018.pdf" target="_blank">Turn-Leitfaden (PDF)</a>
+</footer>
+
+<script>
+const DATA = {
+  "16-17": {
+    w: {
+      ausdauer: [
+        { name: "800 m Lauf", bronze: "4:50 min", silver: "4:05 min", gold: "3:25 min", indoor: true },
+        { name: "Dauer-/Geländelauf", bronze: "45 min", silver: "60 min", gold: "75 min" },
+        { name: "Schwimmen 400 m", bronze: "11:50 min", silver: "10:30 min", gold: "9:05 min", indoor: true },
+        { name: "Radfahren 10 km", bronze: "32:30 min", silver: "28:30 min", gold: "25:00 min" }
+      ],
+      kraft: [
+        { name: "Wurfball (200 g)", bronze: "24,00 m", silver: "27,00 m", gold: "31,00 m" },
+        { name: "Kugelstoßen (3 kg)", bronze: "5,75 m", silver: "6,25 m", gold: "6,75 m" },
+        { name: "Standweitsprung", bronze: "1,65 m", silver: "1,80 m", gold: "2,00 m", indoor: true },
+        { name: "Gerätturnen: Reck", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      schnelligkeit: [
+        { name: "100 m Lauf", bronze: "17,6 s", silver: "16,3 s", gold: "15,0 s", indoor: true },
+        { name: "25 m Schwimmen", bronze: "30,5 s", silver: "25,5 s", gold: "20,0 s", indoor: true },
+        { name: "200 m Radfahren (fl. Start)", bronze: "25,0 s", silver: "22,5 s", gold: "20,0 s" },
+        { name: "Gerätturnen: Sprung", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      koordination: [
+        { name: "Hochsprung", bronze: "1,05 m", silver: "1,15 m", gold: "1,25 m", indoor: true },
+        { name: "Weitsprung", bronze: "3,40 m", silver: "3,70 m", gold: "4,00 m", indoor: true },
+        { name: "Schleuderball (1 kg)", bronze: "22,00 m", silver: "25,00 m", gold: "28,00 m" },
+        { name: "Seilspringen (Kreuzdurchschlag)", bronze: "10×", silver: "15×", gold: "20×", indoor: true },
+        { name: "Gerätturnen: Boden", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ]
+    },
+    m: {
+      ausdauer: [
+        { name: "800 m Lauf", bronze: "4:05 min", silver: "3:25 min", gold: "2:45 min", indoor: true },
+        { name: "Dauer-/Geländelauf", bronze: "55 min", silver: "70 min", gold: "90 min" },
+        { name: "Schwimmen 400 m", bronze: "11:00 min", silver: "9:40 min", gold: "8:20 min", indoor: true },
+        { name: "Radfahren 10 km", bronze: "27:00 min", silver: "23:30 min", gold: "20:30 min" }
+      ],
+      kraft: [
+        { name: "Wurfball (200 g)", bronze: "34,00 m", silver: "38,00 m", gold: "42,00 m" },
+        { name: "Kugelstoßen (4 kg)", bronze: "7,50 m", silver: "8,00 m", gold: "8,50 m" },
+        { name: "Standweitsprung", bronze: "2,05 m", silver: "2,20 m", gold: "2,40 m", indoor: true },
+        { name: "Gerätturnen: Reck", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      schnelligkeit: [
+        { name: "100 m Lauf", bronze: "16,3 s", silver: "14,8 s", gold: "13,5 s", indoor: true },
+        { name: "25 m Schwimmen", bronze: "29,5 s", silver: "24,5 s", gold: "19,0 s", indoor: true },
+        { name: "200 m Radfahren (fl. Start)", bronze: "22,0 s", silver: "19,5 s", gold: "17,0 s" },
+        { name: "Gerätturnen: Sprung", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      koordination: [
+        { name: "Hochsprung", bronze: "1,20 m", silver: "1,30 m", gold: "1,40 m", indoor: true },
+        { name: "Weitsprung", bronze: "4,30 m", silver: "4,60 m", gold: "4,90 m", indoor: true },
+        { name: "Schleuderball (1 kg)", bronze: "27,50 m", silver: "32,00 m", gold: "36,50 m" },
+        { name: "Seilspringen (Kreuzdurchschlag)", bronze: "10×", silver: "15×", gold: "20×", indoor: true },
+        { name: "Gerätturnen: Boden", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ]
+    }
+  },
+  "18-19": {
+    w: {
+      ausdauer: [
+        { name: "3.000 m Lauf", bronze: "20:50 min", silver: "18:50 min", gold: "16:50 min" },
+        { name: "10 km Lauf", bronze: "84:40 min", silver: "78:40 min", gold: "72:40 min" },
+        { name: "7,5 km Walking", bronze: "69:30 min", silver: "66:00 min", gold: "62:00 min" },
+        { name: "Schwimmen 800 m", bronze: "24:00 min", silver: "21:10 min", gold: "18:25 min", indoor: true },
+        { name: "Radfahren 20 km", bronze: "57:30 min", silver: "52:00 min", gold: "46:30 min" }
+      ],
+      kraft: [
+        { name: "Medizinball (2 kg)", bronze: "8,00 m", silver: "9,00 m", gold: "10,00 m", indoor: true },
+        { name: "Kugelstoßen (4 kg)", bronze: "6,50 m", silver: "7,00 m", gold: "7,50 m" },
+        { name: "Steinstoßen (5 kg)", bronze: "10,65 m", silver: "11,25 m", gold: "11,85 m" },
+        { name: "Standweitsprung", bronze: "1,65 m", silver: "1,85 m", gold: "2,05 m", indoor: true },
+        { name: "Gerätturnen: Reck", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      schnelligkeit: [
+        { name: "100 m Lauf", bronze: "18,2 s", silver: "16,5 s", gold: "15,3 s", indoor: true },
+        { name: "25 m Schwimmen", bronze: "29,5 s", silver: "24,0 s", gold: "18,5 s", indoor: true },
+        { name: "200 m Radfahren (fl. Start)", bronze: "24,0 s", silver: "22,0 s", gold: "19,5 s" },
+        { name: "Gerätturnen: Sprung", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      koordination: [
+        { name: "Hochsprung", bronze: "1,10 m", silver: "1,20 m", gold: "1,30 m", indoor: true },
+        { name: "Weitsprung", bronze: "3,40 m", silver: "3,70 m", gold: "4,00 m", indoor: true },
+        { name: "Schleuderball (1 kg)", bronze: "23,50 m", silver: "26,50 m", gold: "29,00 m" },
+        { name: "Seilspringen (Doppeldurchschlag)", bronze: "5×", silver: "10×", gold: "15×", indoor: true },
+        { name: "Gerätturnen: Boden", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ]
+    },
+    m: {
+      ausdauer: [
+        { name: "3.000 m Lauf", bronze: "17:50 min", silver: "15:50 min", gold: "13:50 min" },
+        { name: "10 km Lauf", bronze: "63:20 min", silver: "57:20 min", gold: "51:20 min" },
+        { name: "7,5 km Walking", bronze: "58:30 min", silver: "54:30 min", gold: "50:30 min" },
+        { name: "Schwimmen 800 m", bronze: "22:35 min", silver: "19:50 min", gold: "17:00 min", indoor: true },
+        { name: "Radfahren 20 km", bronze: "47:00 min", silver: "42:30 min", gold: "38:30 min" }
+      ],
+      kraft: [
+        { name: "Medizinball (2 kg)", bronze: "11,00 m", silver: "13,00 m", gold: "14,00 m", indoor: true },
+        { name: "Kugelstoßen (7,26 kg)", bronze: "7,75 m", silver: "8,25 m", gold: "8,75 m" },
+        { name: "Steinstoßen (15 kg)", bronze: "9,30 m", silver: "10,10 m", gold: "10,95 m" },
+        { name: "Standweitsprung", bronze: "2,10 m", silver: "2,30 m", gold: "2,50 m", indoor: true },
+        { name: "Gerätturnen: Reck", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      schnelligkeit: [
+        { name: "100 m Lauf", bronze: "16,0 s", silver: "14,6 s", gold: "13,2 s", indoor: true },
+        { name: "25 m Schwimmen", bronze: "28,0 s", silver: "23,0 s", gold: "17,5 s", indoor: true },
+        { name: "200 m Radfahren (fl. Start)", bronze: "22,0 s", silver: "19,5 s", gold: "17,0 s" },
+        { name: "Gerätturnen: Sprung", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      koordination: [
+        { name: "Hochsprung", bronze: "1,20 m", silver: "1,30 m", gold: "1,40 m", indoor: true },
+        { name: "Weitsprung", bronze: "3,40 m", silver: "3,80 m", gold: "4,20 m", indoor: true },
+        { name: "Schleuderball (1 kg)", bronze: "23,50 m", silver: "29,00 m", gold: "35,00 m" },
+        { name: "Seilspringen (Doppeldurchschlag)", bronze: "5×", silver: "10×", gold: "15×", indoor: true },
+        { name: "Gerätturnen: Ringe", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ]
+    }
+  },
+  "20-24": {
+    w: {
+      ausdauer: [
+        { name: "3.000 m Lauf", bronze: "20:20 min", silver: "18:20 min", gold: "16:20 min" },
+        { name: "Schwimmen 800 m", bronze: "23:35 min", silver: "20:50 min", gold: "18:00 min", indoor: true },
+        { name: "Radfahren 20 km", bronze: "57:00 min", silver: "51:30 min", gold: "45:30 min" },
+        { name: "7,5 km Walking", bronze: "66:30 min", silver: "63:00 min", gold: "60:00 min" }
+      ],
+      kraft: [
+        { name: "Medizinball (2 kg)", bronze: "8,00 m", silver: "9,00 m", gold: "10,00 m", indoor: true },
+        { name: "Kugelstoßen (4 kg)", bronze: "6,50 m", silver: "7,00 m", gold: "7,50 m" },
+        { name: "Standweitsprung", bronze: "1,60 m", silver: "1,80 m", gold: "2,00 m", indoor: true },
+        { name: "Gerätturnen: Reck", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      schnelligkeit: [
+        { name: "100 m Lauf", bronze: "18,5 s", silver: "16,8 s", gold: "15,6 s", indoor: true },
+        { name: "25 m Schwimmen", bronze: "29,0 s", silver: "24,0 s", gold: "18,5 s", indoor: true },
+        { name: "Gerätturnen: Sprung", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      koordination: [
+        { name: "Hochsprung", bronze: "1,10 m", silver: "1,20 m", gold: "1,30 m", indoor: true },
+        { name: "Weitsprung", bronze: "3,40 m", silver: "3,70 m", gold: "4,00 m", indoor: true },
+        { name: "Schleuderball (1 kg)", bronze: "24,00 m", silver: "27,00 m", gold: "29,50 m" },
+        { name: "Seilspringen (Kreuzdurchschlag)", bronze: "5×", silver: "10×", gold: "15×", indoor: true },
+        { name: "Gerätturnen: Boden", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ]
+    },
+    m: {
+      ausdauer: [
+        { name: "3.000 m Lauf", bronze: "17:20 min", silver: "15:20 min", gold: "13:20 min" },
+        { name: "Schwimmen 800 m", bronze: "22:10 min", silver: "19:30 min", gold: "16:25 min", indoor: true },
+        { name: "Radfahren 20 km", bronze: "46:30 min", silver: "42:00 min", gold: "37:30 min" },
+        { name: "7,5 km Walking", bronze: "57:00 min", silver: "53:00 min", gold: "49:00 min" }
+      ],
+      kraft: [
+        { name: "Medizinball (2 kg)", bronze: "11,00 m", silver: "13,50 m", gold: "14,50 m", indoor: true },
+        { name: "Kugelstoßen (7,26 kg)", bronze: "7,75 m", silver: "8,50 m", gold: "9,00 m" },
+        { name: "Standweitsprung", bronze: "2,10 m", silver: "2,30 m", gold: "2,50 m", indoor: true },
+        { name: "Gerätturnen: Reck", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      schnelligkeit: [
+        { name: "100 m Lauf", bronze: "15,8 s", silver: "14,4 s", gold: "13,0 s", indoor: true },
+        { name: "25 m Schwimmen", bronze: "27,0 s", silver: "22,0 s", gold: "15,5 s", indoor: true },
+        { name: "Gerätturnen: Sprung", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ],
+      koordination: [
+        { name: "Hochsprung", bronze: "1,10 m", silver: "1,20 m", gold: "1,30 m", indoor: true },
+        { name: "Weitsprung", bronze: "3,20 m", silver: "3,60 m", gold: "4,00 m", indoor: true },
+        { name: "Schleuderball (1 kg)", bronze: "22,50 m", silver: "28,00 m", gold: "34,00 m" },
+        { name: "Seilspringen (Kreuzdurchschlag)", bronze: "5×", silver: "10×", gold: "15×", indoor: true },
+        { name: "Gerätturnen: Boden", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
+      ]
+    }
+  }
+};
+
+const TURN_DATA = {
+  "16-17": {
+    kraft: {
+      title: "Reck – Übungskombination",
+      exercises: {
+        bronze: ["Hüft-Aufschwung (Abdruck vom kleinen Kasten erlaubt)", "Rückschwung in den Stütz"],
+        silver: ["Hüft-Aufschwung (Seilhilfe erlaubt)", "Rückschwung in den Stütz", "Umschwung vorlings rückwärts"],
+        gold: ["Hüft-Aufschwung ohne Hilfsmittel", "Rückschwung in den Stütz", "Umschwung vorlings rückwärts", "Unterschwung"]
+      }
+    },
+    schnelligkeit: {
+      title: "Sprung – Sprungtisch/Kasten",
+      exercises: {
+        bronze: ["Sprunghocke als Stützsprung"],
+        silver: ["Grätschwinkelsprung"],
+        gold: ["Handstütz-Sprungüberschlag (Überschlag)"]
+      }
+    },
+    koordination: {
+      title: "Boden – Übungskombination",
+      exercises: {
+        bronze: ["Rolle vorwärts", "Strecksprung", "Rolle rückwärts", "Handstand (ohne Wandberührung!)"],
+        silver: ["Rolle vorwärts", "Strecksprung mit ½ Drehung", "Rolle rückwärts in den Handstand", "Rad"],
+        gold: ["Sprungrolle", "Handstütz-Sprungüberschlag", "Handstand-Abrollen", "Rad + Rondat"]
+      }
+    }
+  },
+  "18-19": {
+    kraft: {
+      title: "Reck – Übungskombination",
+      exercises: {
+        bronze: ["Hüft-Aufschwung (Abdruck vom kleinen Kasten erlaubt)", "Rückschwung in den Stütz"],
+        silver: ["Hüft-Aufschwung (Seilhilfe erlaubt)", "Rückschwung in den Stütz", "Umschwung vorlings rückwärts"],
+        gold: ["Hüft-Aufschwung ohne Hilfsmittel", "Rückschwung in den Stütz", "Umschwung vorlings rückwärts", "Unterschwung"]
+      }
+    },
+    schnelligkeit: {
+      title: "Sprung – Sprungtisch/Kasten",
+      exercises: {
+        bronze: ["Sprunghocke als Stützsprung"],
+        silver: ["Grätschwinkelsprung"],
+        gold: ["Handstütz-Sprungüberschlag (Überschlag)"]
+      }
+    },
+    koordination_w: {
+      title: "Boden – Übungskombination",
+      exercises: {
+        bronze: ["Rolle vorwärts", "Strecksprung", "Rolle rückwärts", "Handstand (ohne Wandberührung!)"],
+        silver: ["Rolle vorwärts", "Strecksprung mit ½ Drehung", "Rolle rückwärts in den Handstand", "Rad"],
+        gold: ["Sprungrolle", "Handstütz-Sprungüberschlag", "Handstand-Abrollen", "Rad + Rondat"]
+      }
+    },
+    koordination_m: {
+      title: "Ringe – Schwingen & Abschwingen",
+      exercises: {
+        bronze: ["Schwingen und kontrolliertes Abschwingen"],
+        silver: ["Schwingen mit Beuge-Hang"],
+        gold: ["Schwingen mit Beuge-Hang, kontrolliertes Abschwingen"]
+      }
+    }
+  },
+  "20-24": {
+    kraft: {
+      title: "Reck – Übungskombination",
+      exercises: {
+        bronze: ["Hüft-Aufschwung (Abdruck vom kleinen Kasten erlaubt)", "Rückschwung in den Stütz"],
+        silver: ["Hüft-Aufschwung (Seilhilfe erlaubt)", "Rückschwung in den Stütz", "Umschwung vorlings rückwärts"],
+        gold: ["Hüft-Aufschwung ohne Hilfsmittel", "Rückschwung in den Stütz", "Umschwung vorlings rückwärts", "Unterschwung"]
+      }
+    },
+    schnelligkeit: {
+      title: "Sprung – Sprungtisch/Kasten",
+      exercises: {
+        bronze: ["Sprunghocke als Stützsprung"],
+        silver: ["Grätschwinkelsprung"],
+        gold: ["Handstütz-Sprungüberschlag (Überschlag)"]
+      }
+    },
+    koordination: {
+      title: "Boden – Übungskombination",
+      exercises: {
+        bronze: ["Rolle vorwärts", "Strecksprung", "Rolle rückwärts", "Handstand (ohne Wandberührung!)"],
+        silver: ["Rolle vorwärts", "Strecksprung mit ½ Drehung", "Rolle rückwärts in den Handstand", "Rad"],
+        gold: ["Sprungrolle", "Handstütz-Sprungüberschlag", "Handstand-Abrollen", "Rad + Rondat"]
+      }
+    }
+  }
+};
+
+const GROUP_META = {
+  ausdauer:      { icon: "🏃", label: "Ausdauer", num: 1 },
+  kraft:         { icon: "💪", label: "Kraft", num: 2 },
+  schnelligkeit: { icon: "⚡", label: "Schnelligkeit", num: 3 },
+  koordination:  { icon: "🎯", label: "Koordination", num: 4 }
+};
+
+function updateResults() {
+  const gender = document.getElementById('gender').value;
+  const age = document.getElementById('age').value;
+  const results = document.getElementById('results');
+
+  if (!gender || !age) {
+    results.classList.add('hidden');
+    return;
+  }
+
+  const data = DATA[age]?.[gender];
+  if (!data) {
+    results.classList.add('hidden');
+    return;
+  }
+
+  results.classList.remove('hidden');
+
+  // Age note
+  const noteContainer = document.getElementById('age-note-container');
+  if (age === '18-19' || age === '20-24') {
+    noteContainer.innerHTML = `
+      <div class="age-note">
+        <strong>⚠️ Ab 18 gilt der Erwachsenen-Katalog!</strong><br>
+        Wichtige Unterschiede: ${age === '18-19'
+          ? '3.000 m statt 800 m, 800 m Schwimmen statt 400 m, Kugel schwerer (4 kg w / 7,26 kg m), Schwimmnachweis alle 5 Jahre erneuern!'
+          : 'Eigene Altersgruppe mit leicht anderen Werten als 18–19. Schwimmnachweis alle 5 Jahre!'}
+      </div>`;
+  } else {
+    noteContainer.innerHTML = '';
+  }
+
+  // Groups
+  const container = document.getElementById('groups-container');
+  let html = '';
+
+  for (const [key, meta] of Object.entries(GROUP_META)) {
+    const disciplines = data[key];
+    if (!disciplines) continue;
+
+    html += `<div class="group-card">
+      <div class="group-header" onclick="this.parentElement.querySelector('.group-body').classList.toggle('hidden')">
+        <span class="icon">${meta.icon}</span>
+        Gruppe ${meta.num}: ${meta.label}
+        <span class="badge">${disciplines.filter(d => !d.isTurn).length} Disziplinen${disciplines.some(d => d.isTurn) ? ' + Turnen' : ''}</span>
+      </div>
+      <div class="group-body">`;
+
+    for (const disc of disciplines) {
+      if (disc.isTurn) continue;
+      html += `<div class="discipline">
+        <div class="disc-name">
+          ${disc.name}
+          ${disc.indoor ? '<span class="indoor-tag">🏠 Halle</span>' : ''}
+        </div>
+        <div class="levels">
+          <div class="level level-bronze">
+            <div class="level-label">Bronze</div>
+            <div class="level-value">${disc.bronze}</div>
+          </div>
+          <div class="level level-silver">
+            <div class="level-label">Silber</div>
+            <div class="level-value">${disc.silver}</div>
+          </div>
+          <div class="level level-gold">
+            <div class="level-label">Gold</div>
+            <div class="level-value">${disc.gold}</div>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    // Turnen section
+    const turnInfo = TURN_DATA[age];
+    if (turnInfo) {
+      let turnKey = key;
+      if (key === 'koordination' && age === '18-19') {
+        turnKey = gender === 'w' ? 'koordination_w' : 'koordination_m';
+      }
+      const turn = turnInfo[turnKey];
+      if (turn) {
+        html += `<div class="turn-section">
+          <h4>🤸 Alternative: ${turn.title}</h4>`;
+        for (const [level, exercises] of Object.entries(turn.exercises)) {
+          const labelMap = { bronze: 'Bronze', silver: 'Silber', gold: 'Gold' };
+          html += `<div class="turn-detail">
+            <div class="turn-level-label ${level}">${labelMap[level]}</div>
+            <ul>${exercises.map(e => `<li>${e}</li>`).join('')}</ul>
+          </div>`;
+        }
+        // Add PDF links based on group
+        const pdfLinks = {
+          kraft: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_kraft.pdf', label: 'Reck-Übungen (bebildert)' },
+          schnelligkeit: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_schnelligkeit.pdf', label: 'Sprung-Übungen (bebildert)' },
+          koordination: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_koordination.pdf', label: 'Boden/Drehsprung (bebildert)' },
+          koordination_w: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_koordination.pdf', label: 'Boden-Übungen (bebildert)' },
+          koordination_m: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_koordination.pdf', label: 'Ringe-Übungen (bebildert)' }
+        };
+        const pdfInfo = pdfLinks[turnKey] || pdfLinks[key];
+        html += `<div class="turn-links">
+          📄 <a href="${pdfInfo.url}" target="_blank">${pdfInfo.label} →</a>
+          <a href="https://cdn.dosb.de/alter_Datenbestand/Sportabzeichen/Materialien_2018/DSA-Coach-UEbungsbooklet_interaktiv.pdf" target="_blank">DOSB Übungsbooklet →</a>
+        </div>`;
+        html += `<div class="safety-note">
+          ⚠️ <strong>Pflicht:</strong> Qualifizierte/r Turntrainer/in muss anwesend sein! Matten sichern, Schmuck ablegen, eng anliegende Kleidung.
+        </div></div>`;
+      }
+    }
+
+    html += `</div></div>`;
+  }
+
+  container.innerHTML = html;
+
+  // Swim section
+  const swimContainer = document.getElementById('swim-container');
+  const isAdult = age !== '16-17';
+  swimContainer.innerHTML = `
+    <div class="swim-section">
+      <h4>🏊 Schwimmnachweis (Pflicht)</h4>
+      <p>
+        <strong>200 m</strong> in max. <strong>11 Minuten</strong> oder <strong>15 Min. Dauerschwimmen</strong><br>
+        ${isAdult
+          ? '⚠️ <strong>Erwachsene: Alle 5 Jahre erneuern!</strong>'
+          : '✅ Einmaliger Nachweis reicht (Jugend)'}
+        <br>
+        <em>Alternative: Deutsches Schwimmabzeichen, Rettungsschwimmabzeichen o.ä.</em>
+      </p>
+    </div>`;
+}
+</script>
+</body>
+</html>
