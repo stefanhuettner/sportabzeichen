@@ -9,6 +9,7 @@
 
 ### 1. 🏫 Lehrer & Digitalisierungsbeauftragter
 - Mathematik und Sport am Berufskolleg im Ruhrgebiet
+- Klassenlehrer der AH12G (Berufliches Gymnasium)
 - Digitalisierungsbeauftragter an seiner Schule
 - Entwickelt Unterrichtskonzepte
 - Gibt Fortbildungen zu digitalen Tools und KI im Unterricht

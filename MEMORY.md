@@ -2,6 +2,32 @@
 
 _Kuratierte Erinnerungen. Das Wichtigste, destilliert._
 
+## 🏫 PSBK Dorsten
+
+- Stefan ist Lehrer am Paul-Spiegel-Berufskolleg Dorsten (Kreis Recklinghausen, NICHT Warendorf!)
+- Rollen: Mathe/Sport-Lehrer, Klassenlehrer AH12G, Digitalisierungsbeauftragter, Fortbildungen
+- Schulleiterin: Nicola Michels (seit 2021), Stellvertreterin: Tülün Lübke
+- Ca. 1.250 Schüler, 26 Bildungsgänge, Halterner Str. 15, 46284 Dorsten
+- Schulprofil-Dokument: Google Doc 1JNZbMDAjou2Lr8wwjcqycR6bn27Efg39Txdsw-vDPjU (Drive: 04 Schule)
+- PSBK Aufgaben & Ideen: Google Doc 1OmaIcFXvDDWBnZF88L43gc-uJ3zL2j6bjM-8d-DfqJg
+- NotebookLM Notebook "PSBK": ab34f968-08d9-4599-bcb4-40d24a993a94 (Schulprofil als Quelle)
+- Slack #schule (C0AL3STHB40): Pin ts 1773372662.547239
+
+## ✉️ E-Mail-Workflow (Schule)
+
+1. Stefan leitet E-Mail an pia@stefanhuettner.de weiter
+2. Stefan diktiert/schreibt seine Antwort in #schule
+3. Pia formuliert die Antwort in Stefans Tonalität (→ NotebookLM PSBK: "Tonalität E-Mails und Rollen")
+4. Pia schickt Entwurf in #schule zur Freigabe
+5. Stefan gibt frei
+6. Pia antwortet per Gmail (SMTP, als stefan@stefanhuettner.de / Reply auf die weitergeleitete Mail)
+7. Danach: E-Mails aus Posteingang UND Gesendet löschen
+
+## 💬 Slack-Regeln
+
+- **„Aufräumen"** (oder sinngemäß) = alle meine Nachrichten im Channel löschen (gilt für ALLE Channels)
+- Gepinnte Nachrichten NICHT löschen — nur normale Konversation
+
 ## 🦒 Geburt (07.03.2026)
 
 - Pia wurde am 7. März 2026 von Stefan ins Leben gerufen
