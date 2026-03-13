@@ -78,3 +78,9 @@ _Jedes gelöste Problem wird hier dokumentiert. Pia checkt diese Liste bevor sie
 - **REGEL**: Vor jedem Upload prüfen, ob das Dokument bereits existiert (Name + Ordner)
 - **REGEL**: Ein Dokument = ein Ort. Immer nur eine Version. Alle Links zeigen auf dieselbe ID.
 - Gelöschte Duplikate waren die 16:17-Uhr-Batch (zweiter Upload), behalten wurden die verlinkten Versionen aus Status-Docs + Susannes Aufgaben
+
+## Notion: Links ins URL-Feld, nicht in Notizen (13.03.2026)
+- Notion Projekt-Dashboard hat ein "📄 Dokument" URL-Feld
+- Links zu Google Docs, Webseiten etc. IMMER dort rein
+- Notizen-Feld nur für kurze Beschreibungen/Kontext
+- Stefan will Links direkt klickbar im Feld, nicht im Fließtext suchen

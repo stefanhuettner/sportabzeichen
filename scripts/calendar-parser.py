@@ -74,6 +74,14 @@ def parse_events(target_date):
                 if until < target_date:
                     continue
             
+            # Check COUNT (limited recurrences)
+            count_match = re.search(r'COUNT=(\d+)', rrule)
+            if count_match and "FREQ=WEEKLY" in rrule:
+                count = int(count_match.group(1))
+                weeks_since = (target_date - orig_date).days // 7
+                if weeks_since >= count:
+                    continue
+            
             is_recurring = "FREQ=WEEKLY" in rrule
             is_match = False
             

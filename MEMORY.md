@@ -86,7 +86,15 @@ Stefan hat klar definiert, was er von mir erwartet:
 - Stefan hat Google Workspace für stefanhuettner.de (Business Standard, 16,20€/Mo)
 - Hetzner Cloud Firewall aktiv: nur TCP 2222 + ICMP, alles andere blockiert
 - ufw/iptables geht nicht auf Hetzner (Kernel-Einschränkung) → Hetzner Cloud Firewall nutzen
-- Notion "Stefans To-Dos" DB: 49c0cc2d-76c0-4318-af06-da2fb00dccaf (Top 3 + Optional nach jeder Nachtschicht)
+- Notion komplett aufgeräumt (13.03.2026) — NUR noch Projekt-Dashboard aktiv, alles andere archiviert
+- Notion "Projekt-Dashboard" DB: 32220b6b-b845-811b-9aaf-cc2fcbd499d3
+  - URL: https://www.notion.so/32220b6bb845811b9aafcc2fcbd499d3
+  - Properties: Aufgabe, Projekt (Select), Status, Priorität, Wer (Multi-Select), Fällig, Notizen, Gehört zu (Self-Relation für Unterprojekte)
+  - Projekte: 🦁 Löwenstark, 👨‍👩‍👧 #kinderleicht, 🏫 PSBK, ⚙️ Technik, 🏠 Privat, 📋 Organisation
+  - 27 Aufgaben mit Notizen + Drive-Links
+  - Alle Slack-Channel-Pins verlinken auf das Dashboard
+- Redaktionskalender 365 → Google Sheets: https://docs.google.com/spreadsheets/d/1W9rzX3rUFwd8gMy4cfSMeFnMQ-I6nZH5Ws3AGZYGMhs/edit
+- Notion Free Plan: Block-Limit war erreicht, durch Aufräumen gelöst (kein Upgrade nötig)
 - Löwenstark Preisstruktur → SINGLE SOURCE OF TRUTH: Google Doc "Preisstruktur Löwenstark 2026" (ID: 1g9ufW_S7KOVhFa3Ur7yAEQiQZHjcpfmWlvVxXIqCdAI) im Ordner 01 Löwenstark. Alle Preisdiskussionen → dieses Dokument aktualisieren!
 - **Workflow-Regel: Kontextuelle Links!** Keine separate Link-Listen. Jede Erwähnung eines Dokuments (in Nachtberichten, Dashboard, Aufgaben, Pins) = direkt verlinkt. Stefan will Links DORT wo er sie braucht, nicht extra suchen.
 - Tagesrhythmus: 06:00 Morgen-Briefing, 20:00 Abend-Report
