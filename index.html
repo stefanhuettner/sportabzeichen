@@ -18,6 +18,7 @@
     --border: #e2e8f0;
     --success: #10b981;
     --warning: #f59e0b;
+    --danger: #ef4444;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -46,17 +47,10 @@
     box-shadow: 0 4px 20px rgba(0,90,140,0.3);
   }
 
-  header h1 {
-    font-size: 1.6em;
-    font-weight: 700;
-    margin-bottom: 4px;
-  }
+  header h1 { font-size: 1.6em; font-weight: 700; margin-bottom: 4px; }
+  header p { opacity: 0.85; font-size: 0.95em; }
 
-  header p {
-    opacity: 0.85;
-    font-size: 0.95em;
-  }
-
+  /* --- Selector --- */
   .selector {
     background: var(--card);
     border-radius: 16px;
@@ -69,10 +63,7 @@
     align-items: end;
   }
 
-  .field {
-    flex: 1;
-    min-width: 140px;
-  }
+  .field { flex: 1; min-width: 140px; }
 
   .field label {
     display: block;
@@ -100,11 +91,48 @@
     background-position: right 12px center;
   }
 
-  .field select:focus {
-    outline: none;
+  .field select:focus { outline: none; border-color: var(--primary); }
+
+  /* --- Katalog-Toggle --- */
+  .catalog-toggle {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .catalog-toggle span {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .toggle-btn {
+    padding: 8px 18px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: white;
+    color: var(--text);
+    font-size: 0.88em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .toggle-btn.active {
+    background: var(--primary);
+    color: white;
     border-color: var(--primary);
   }
 
+  .toggle-btn:hover:not(.active) { background: var(--primary-light); }
+
+  /* --- Info / Note banners --- */
   .info-banner {
     background: var(--primary-light);
     border-left: 4px solid var(--primary);
@@ -113,7 +141,6 @@
     margin-bottom: 20px;
     font-size: 0.9em;
   }
-
   .info-banner strong { color: var(--primary); }
 
   .age-note {
@@ -125,6 +152,7 @@
     font-size: 0.9em;
   }
 
+  /* --- Group Cards --- */
   .group-card {
     background: var(--card);
     border-radius: 16px;
@@ -144,15 +172,15 @@
     user-select: none;
     transition: background 0.15s;
   }
-
-  .group-header:hover {
-    background: rgba(0,0,0,0.02);
+  .group-header:hover { background: rgba(0,0,0,0.02); }
+  .group-header .icon { font-size: 1.3em; }
+  .group-header .chevron {
+    margin-left: 4px;
+    font-size: 0.7em;
+    color: var(--text-muted);
+    transition: transform 0.2s;
   }
-
-  .group-header .icon {
-    font-size: 1.3em;
-  }
-
+  .group-header.collapsed .chevron { transform: rotate(-90deg); }
   .group-header .badge {
     margin-left: auto;
     font-size: 0.75em;
@@ -163,17 +191,16 @@
     font-weight: 600;
   }
 
-  .group-body {
-    padding: 0 20px 20px;
-  }
+  .group-body { padding: 0 20px 20px; }
+  .group-body.collapsed { display: none; }
 
+  /* --- Discipline rows --- */
   .discipline {
     border: 1px solid var(--border);
     border-radius: 10px;
     margin-bottom: 10px;
     overflow: hidden;
   }
-
   .discipline:last-child { margin-bottom: 0; }
 
   .disc-name {
@@ -195,6 +222,15 @@
     font-weight: 500;
   }
 
+  .disc-name .ext-tag {
+    font-size: 0.75em;
+    background: #fce7f3;
+    color: #9d174d;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+
   .levels {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -207,10 +243,7 @@
     padding: 10px 8px;
     border-top: 1px solid var(--border);
   }
-
-  .level:not(:last-child) {
-    border-right: 1px solid var(--border);
-  }
+  .level:not(:last-child) { border-right: 1px solid var(--border); }
 
   .level-label {
     font-size: 0.7em;
@@ -230,6 +263,14 @@
     color: var(--text);
   }
 
+  .level-value.placeholder {
+    color: var(--text-muted);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.95em;
+  }
+
+  /* --- Turn section --- */
   .turn-section {
     background: #f0fdf4;
     border: 1px solid #bbf7d0;
@@ -247,34 +288,21 @@
     gap: 6px;
   }
 
-  .turn-detail {
-    margin-bottom: 12px;
-  }
-
+  .turn-detail { margin-bottom: 12px; }
   .turn-detail:last-child { margin-bottom: 0; }
 
-  .turn-level-label {
-    font-weight: 700;
-    font-size: 0.82em;
-    margin-bottom: 4px;
-  }
-
+  .turn-level-label { font-weight: 700; font-size: 0.82em; margin-bottom: 4px; }
   .turn-level-label.bronze { color: var(--bronze); }
   .turn-level-label.silver { color: var(--silver); }
   .turn-level-label.gold { color: var(--gold); }
 
-  .turn-detail ul {
-    list-style: none;
-    padding-left: 0;
-  }
-
+  .turn-detail ul { list-style: none; padding-left: 0; }
   .turn-detail li {
     font-size: 0.88em;
     padding: 2px 0 2px 18px;
     position: relative;
     color: #374151;
   }
-
   .turn-detail li::before {
     content: '→';
     position: absolute;
@@ -282,6 +310,7 @@
     color: #10b981;
   }
 
+  /* --- Swim section --- */
   .swim-section {
     background: #eff6ff;
     border: 1px solid #bfdbfe;
@@ -289,18 +318,10 @@
     padding: 16px;
     margin-top: 16px;
   }
+  .swim-section h4 { font-size: 0.9em; color: #1e40af; margin-bottom: 6px; }
+  .swim-section p { font-size: 0.88em; color: #374151; }
 
-  .swim-section h4 {
-    font-size: 0.9em;
-    color: #1e40af;
-    margin-bottom: 6px;
-  }
-
-  .swim-section p {
-    font-size: 0.88em;
-    color: #374151;
-  }
-
+  /* --- Scoring --- */
   .scoring {
     background: var(--card);
     border-radius: 16px;
@@ -308,20 +329,9 @@
     margin-top: 16px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   }
+  .scoring h3 { font-size: 1em; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
 
-  .scoring h3 {
-    font-size: 1em;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .score-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
+  .score-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 
   .score-item {
     text-align: center;
@@ -329,14 +339,91 @@
     border-radius: 10px;
     border: 2px solid;
   }
-
   .score-bronze { border-color: var(--bronze); background: #fef3e2; }
   .score-silver { border-color: var(--silver); background: #f3f4f6; }
   .score-gold { border-color: var(--gold); background: #fefce8; }
-
   .score-item .medal { font-size: 1.4em; }
   .score-item .points { font-size: 0.82em; font-weight: 600; margin-top: 4px; }
 
+  /* --- Points Calculator --- */
+  .calculator {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .calculator h3 { font-size: 1em; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+
+  .calc-group {
+    margin-bottom: 14px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .calc-group-title {
+    font-weight: 700;
+    font-size: 0.92em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .calc-disc-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .calc-disc-row:last-child { margin-bottom: 0; }
+
+  .calc-disc-name {
+    min-width: 140px;
+    font-size: 0.88em;
+    color: var(--text);
+  }
+
+  .calc-btn {
+    padding: 4px 12px;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    background: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .calc-btn:hover { background: #f8fafc; }
+  .calc-btn.bronze.active { background: #fef3e2; border-color: var(--bronze); color: var(--bronze); }
+  .calc-btn.silver.active { background: #f3f4f6; border-color: var(--silver); color: var(--silver); }
+  .calc-btn.gold.active { background: #fefce8; border-color: var(--gold); color: var(--gold); }
+  .calc-btn.none { color: var(--text-muted); font-weight: 400; font-size: 0.75em; }
+  .calc-btn.none.active { background: #fef2f2; border-color: var(--danger); color: var(--danger); }
+
+  .calc-result {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: all 0.3s;
+  }
+  .calc-result.bronze { background: #fef3e2; color: #92400e; border: 2px solid var(--bronze); }
+  .calc-result.silver { background: #f3f4f6; color: #374151; border: 2px solid var(--silver); }
+  .calc-result.gold { background: #fefce8; color: #854d0e; border: 2px solid var(--gold); }
+  .calc-result.incomplete { background: #fef2f2; color: #991b1b; border: 2px solid #fecaca; }
+
+  .calc-score-breakdown {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  /* --- Safety --- */
   .safety-note {
     background: #fef2f2;
     border: 1px solid #fecaca;
@@ -353,7 +440,6 @@
     background: #ecfdf5;
     border-radius: 8px;
   }
-
   .turn-links a {
     display: inline-flex;
     align-items: center;
@@ -370,14 +456,9 @@
     border: 1px solid #a7f3d0;
     transition: background 0.15s;
   }
-
-  .turn-links a:hover {
-    background: #d1fae5;
-    text-decoration: none;
-  }
+  .turn-links a:hover { background: #d1fae5; text-decoration: none; }
 
   .hidden { display: none; }
-
   #results { transition: opacity 0.3s; }
 
   footer {
@@ -386,7 +467,6 @@
     color: var(--text-muted);
     font-size: 0.8em;
   }
-
   footer a { color: var(--primary); text-decoration: none; }
   footer a:hover { text-decoration: underline; }
 
@@ -395,6 +475,9 @@
     header h1 { font-size: 1.3em; }
     .score-grid { grid-template-columns: 1fr; }
     .container { padding: 12px; }
+    .calc-disc-name { min-width: 100%; margin-bottom: 4px; }
+    .levels { grid-template-columns: 1fr; }
+    .level:not(:last-child) { border-right: none; border-bottom: 1px solid var(--border); }
   }
 </style>
 </head>
@@ -402,10 +485,12 @@
 
 <header>
   <h1>🏅 Deutsches Sportabzeichen</h1>
-  <p>Anforderungen & Disziplinen</p>
+  <p>Anforderungen & Disziplinen – Alle Altersklassen</p>
 </header>
 
 <div class="container">
+
+  <!-- Selector -->
   <div class="selector">
     <div class="field">
       <label>Geschlecht</label>
@@ -422,10 +507,32 @@
         <option value="16-17">16–17 Jahre</option>
         <option value="18-19">18–19 Jahre</option>
         <option value="20-24">20–24 Jahre</option>
+        <option value="25-29">25–29 Jahre</option>
+        <option value="30-34">30–34 Jahre</option>
+        <option value="35-39">35–39 Jahre</option>
+        <option value="40-44">40–44 Jahre</option>
+        <option value="45-49">45–49 Jahre</option>
+        <option value="50-54">50–54 Jahre</option>
+        <option value="55-59">55–59 Jahre</option>
+        <option value="60-64">60–64 Jahre</option>
+        <option value="65-69">65–69 Jahre</option>
+        <option value="70-74">70–74 Jahre</option>
+        <option value="75-79">75–79 Jahre</option>
+        <option value="80-84">80–84 Jahre</option>
+        <option value="85-89">85–89 Jahre</option>
+        <option value="90+">90 Jahre und älter</option>
       </select>
     </div>
   </div>
 
+  <!-- Catalog Toggle (Standard vs. Erweitert) -->
+  <div class="catalog-toggle hidden" id="catalog-toggle">
+    <span>Katalog:</span>
+    <button class="toggle-btn active" data-cat="standard" onclick="setCatalog('standard')">Standard</button>
+    <button class="toggle-btn" data-cat="erweitert" onclick="setCatalog('erweitert')">Erweitert</button>
+  </div>
+
+  <!-- Results -->
   <div id="results" class="hidden">
     <div id="age-note-container"></div>
 
@@ -434,38 +541,55 @@
     </div>
 
     <div id="groups-container"></div>
-
     <div id="swim-container"></div>
 
     <div class="scoring">
-      <h3>📊 Gesamtwertung</h3>
+      <h3>📊 Gesamtwertung (Punktesystem)</h3>
       <div class="score-grid">
         <div class="score-item score-bronze">
           <div class="medal">🥉</div>
           <div><strong>Bronze</strong></div>
-          <div class="points">je 1 Punkt · mind. 4 Pkt</div>
+          <div class="points">4–7 Punkte</div>
         </div>
         <div class="score-item score-silver">
           <div class="medal">🥈</div>
           <div><strong>Silber</strong></div>
-          <div class="points">je 2 Punkte · mind. 8 Pkt</div>
+          <div class="points">8–10 Punkte</div>
         </div>
         <div class="score-item score-gold">
           <div class="medal">🥇</div>
           <div><strong>Gold</strong></div>
-          <div class="points">je 3 Punkte · mind. 11 Pkt</div>
+          <div class="points">11–12 Punkte</div>
         </div>
+      </div>
+      <p style="font-size:0.82em; color:var(--text-muted); margin-top:10px;">
+        Pro Disziplin: Bronze = 1 Pkt, Silber = 2 Pkt, Gold = 3 Pkt. Aus 4 Gruppen = max. 12 Punkte.
+      </p>
+    </div>
+
+    <!-- Points Calculator -->
+    <div class="calculator hidden" id="calculator">
+      <h3>🧮 Punkte-Rechner</h3>
+      <p style="font-size:0.85em; color:var(--text-muted); margin-bottom:12px;">Wähle für jede Gruppe deine Leistung:</p>
+      <div id="calc-groups"></div>
+      <div id="calc-result" class="calc-result incomplete">
+        Wähle mindestens eine Disziplin pro Gruppe
       </div>
     </div>
   </div>
 </div>
 
 <footer>
-  Quelle: <a href="https://deutsches-sportabzeichen.de/materialien" target="_blank">DOSB Leistungskatalog 2025</a> ·
-  <a href="https://cdn.dosb.de/Relaunch_2024/Sportabzeichen/Materialien_2025/DSA-Leitfaden_fuer_PrueferInnen_zu_den_Turn-Aufgaben_2018.pdf" target="_blank">Turn-Leitfaden (PDF)</a>
+  Quelle: <a href="https://deutsches-sportabzeichen.de/materialien" target="_blank">DOSB Leistungskatalog 2025/2026</a> ·
+  <a href="https://cdn.dosb.de/Relaunch_2024/Sportabzeichen/Materialien_2018/DSA-Leitfaden_fuer_PrueferInnen_zu_den_Turn-Aufgaben_2018.pdf" target="_blank">Turn-Leitfaden (PDF)</a>
 </footer>
 
 <script>
+// ============================================================
+// DATA — TODO: Replace PLACEHOLDER values with official DOSB data
+// Values marked "–" need to be filled in from the official catalog.
+// ============================================================
+
 const DATA = {
   "16-17": {
     w: {
@@ -636,9 +760,57 @@ const DATA = {
         { name: "Gerätturnen: Boden", bronze: "→ Turnen", silver: "→ Turnen", gold: "→ Turnen", indoor: true, isTurn: true }
       ]
     }
+  },
+  // === PLACEHOLDER AGE GROUPS — values need to be filled from official DOSB data ===
+  "25-29": { w: null, m: null, _placeholder: true },
+  "30-34": { w: null, m: null, _placeholder: true },
+  "35-39": { w: null, m: null, _placeholder: true },
+  "40-44": { w: null, m: null, _placeholder: true },
+  "45-49": { w: null, m: null, _placeholder: true },
+  "50-54": { w: null, m: null, _placeholder: true },
+  "55-59": { w: null, m: null, _placeholder: true },
+  "60-64": { w: null, m: null, _placeholder: true },
+  "65-69": { w: null, m: null, _placeholder: true },
+  "70-74": { w: null, m: null, _placeholder: true },
+  "75-79": { w: null, m: null, _placeholder: true },
+  "80-84": { w: null, m: null, _placeholder: true },
+  "85-89": { w: null, m: null, _placeholder: true },
+  "90+":   { w: null, m: null, _placeholder: true }
+};
+
+// ============================================================
+// Extended catalog — alternative exercises (erweiterter Katalog)
+// Structure mirrors DATA but with additional discipline options.
+// TODO: Fill with official extended catalog values.
+// ============================================================
+const DATA_EXTENDED = {
+  "18-19": {
+    w: {
+      ausdauer: [
+        ...DATA["18-19"].w.ausdauer,
+        { name: "Curl-Up-Test", bronze: "–", silver: "–", gold: "–", indoor: true, ext: true },
+        { name: "Liegestütz", bronze: "–", silver: "–", gold: "–", indoor: true, ext: true }
+      ]
+    },
+    kraft: [],
+    schnelligkeit: [],
+    koordination: []
+  },
+  m: {
+    ausdauer: [
+      ...DATA["18-19"].m.ausdauer,
+      { name: "Curl-Up-Test", bronze: "–", silver: "–", gold: "–", indoor: true, ext: true },
+      { name: "Liegestütz", bronze: "–", silver: "–", gold: "–", indoor: true, ext: true }
+    ],
+    kraft: [],
+    schnelligkeit: [],
+    koordination: []
   }
 };
 
+// ============================================================
+// Turn data (gymnastics)
+// ============================================================
 const TURN_DATA = {
   "16-17": {
     kraft: {
@@ -728,6 +900,9 @@ const TURN_DATA = {
   }
 };
 
+// ============================================================
+// Constants
+// ============================================================
 const GROUP_META = {
   ausdauer:      { icon: "🏃", label: "Ausdauer", num: 1 },
   kraft:         { icon: "💪", label: "Kraft", num: 2 },
@@ -735,76 +910,122 @@ const GROUP_META = {
   koordination:  { icon: "🎯", label: "Koordination", num: 4 }
 };
 
+let currentCatalog = 'standard';
+let calcState = {};  // { groupName: { discName: 'none'|'bronze'|'silver'|'gold' } }
+
+// ============================================================
+// Catalog toggle
+// ============================================================
+function setCatalog(cat) {
+  currentCatalog = cat;
+  document.querySelectorAll('.toggle-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.cat === cat);
+  });
+  updateResults();
+}
+
+// ============================================================
+// Main render
+// ============================================================
 function updateResults() {
   const gender = document.getElementById('gender').value;
   const age = document.getElementById('age').value;
   const results = document.getElementById('results');
+  const catToggle = document.getElementById('catalog-toggle');
 
   if (!gender || !age) {
+    results.classList.add('hidden');
+    catToggle.classList.add('hidden');
+    return;
+  }
+
+  let ageData = DATA[age];
+  if (!ageData || ageData._placeholder) {
+    results.classList.remove('hidden');
+    catToggle.classList.add('hidden');
+    document.getElementById('age-note-container').innerHTML = `
+      <div class="age-note">
+        <strong>⚠️ Daten für Altersklasse ${age} noch nicht verfügbar.</strong><br>
+        Die exakten Leistungsanforderungen für diese Altersklasse werden demnächst eingetragen.
+        Die Struktur (4 Disziplingruppen, Bronze/Silber/Gold) bleibt für alle Altersklassen gleich.
+      </div>`;
+    document.getElementById('groups-container').innerHTML = renderPlaceholderGroups();
+    document.getElementById('swim-container').innerHTML = renderSwim(true);
+    document.getElementById('calculator').classList.add('hidden');
+    return;
+  }
+
+  let data = ageData[gender];
+  if (!data) {
     results.classList.add('hidden');
     return;
   }
 
-  const data = DATA[age]?.[gender];
-  if (!data) {
-    results.classList.add('hidden');
-    return;
+  // Show catalog toggle for ages with extended data
+  const hasExtended = DATA_EXTENDED[age] && DATA_EXTENDED[age][gender];
+  if (hasExtended) {
+    catToggle.classList.remove('hidden');
+  } else {
+    catToggle.classList.add('hidden');
+    currentCatalog = 'standard';
+  }
+
+  // Merge extended if active
+  let renderData = data;
+  if (currentCatalog === 'erweitert' && hasExtended) {
+    renderData = {};
+    for (const [gk, discs] of Object.entries(data)) {
+      const ext = DATA_EXTENDED[age][gender][gk] || [];
+      renderData[gk] = [...discs, ...ext.filter(e => !discs.some(d => d.name === e.name))];
+    }
   }
 
   results.classList.remove('hidden');
 
   // Age note
   const noteContainer = document.getElementById('age-note-container');
-  if (age === '18-19' || age === '20-24') {
-    noteContainer.innerHTML = `
-      <div class="age-note">
-        <strong>⚠️ Ab 18 gilt der Erwachsenen-Katalog!</strong><br>
-        Wichtige Unterschiede: ${age === '18-19'
-          ? '3.000 m statt 800 m, 800 m Schwimmen statt 400 m, Kugel schwerer (4 kg w / 7,26 kg m), Schwimmnachweis alle 5 Jahre erneuern!'
-          : 'Eigene Altersgruppe mit leicht anderen Werten als 18–19. Schwimmnachweis alle 5 Jahre!'}
-      </div>`;
-  } else {
-    noteContainer.innerHTML = '';
-  }
+  const isAdult = age !== '16-17';
+  noteContainer.innerHTML = isAdult ? `
+    <div class="age-note">
+      <strong>⚠️ Altersklasse ${age} – Erwachsenen-Katalog</strong><br>
+      Schwimmnachweis alle 5 Jahre erneuern! Aus jeder der 4 Gruppen eine Disziplin wählen.
+    </div>` : '';
 
   // Groups
   const container = document.getElementById('groups-container');
   let html = '';
+  calcState = {};
 
   for (const [key, meta] of Object.entries(GROUP_META)) {
-    const disciplines = data[key];
+    const disciplines = renderData[key];
     if (!disciplines) continue;
 
+    const normalDiscs = disciplines.filter(d => !d.isTurn);
+    const turnDiscs = disciplines.filter(d => d.isTurn);
+    const extDiscs = normalDiscs.filter(d => d.ext);
+
     html += `<div class="group-card">
-      <div class="group-header" onclick="this.parentElement.querySelector('.group-body').classList.toggle('hidden')">
+      <div class="group-header" onclick="toggleGroup(this)">
         <span class="icon">${meta.icon}</span>
         Gruppe ${meta.num}: ${meta.label}
-        <span class="badge">${disciplines.filter(d => !d.isTurn).length} Disziplinen${disciplines.some(d => d.isTurn) ? ' + Turnen' : ''}</span>
+        <span class="badge">${normalDiscs.filter(d => !d.ext).length} Disziplinen${turnDiscs.length ? ' + Turnen' : ''}${extDiscs.length ? ' · ' + extDiscs.length + ' extra' : ''}</span>
+        <span class="chevron">▼</span>
       </div>
       <div class="group-body">`;
 
-    for (const disc of disciplines) {
-      if (disc.isTurn) continue;
-      html += `<div class="discipline">
-        <div class="disc-name">
-          ${disc.name}
-          ${disc.indoor ? '<span class="indoor-tag">🏠 Halle</span>' : ''}
-        </div>
-        <div class="levels">
-          <div class="level level-bronze">
-            <div class="level-label">Bronze</div>
-            <div class="level-value">${disc.bronze}</div>
-          </div>
-          <div class="level level-silver">
-            <div class="level-label">Silber</div>
-            <div class="level-value">${disc.silver}</div>
-          </div>
-          <div class="level level-gold">
-            <div class="level-label">Gold</div>
-            <div class="level-value">${disc.gold}</div>
-          </div>
-        </div>
-      </div>`;
+    // Standard disciplines
+    for (const disc of normalDiscs.filter(d => !d.ext)) {
+      html += renderDiscipline(disc);
+    }
+
+    // Extended disciplines (separate section)
+    if (extDiscs.length) {
+      html += `<div style="margin-top:12px; padding-top:12px; border-top:1px dashed var(--border);">
+        <div style="font-size:0.8em; font-weight:600; color:var(--text-muted); margin-bottom:8px;">ERWEITERTER KATALOG</div>`;
+      for (const disc of extDiscs) {
+        html += renderDiscipline(disc);
+      }
+      html += `</div>`;
     }
 
     // Turnen section
@@ -816,31 +1037,7 @@ function updateResults() {
       }
       const turn = turnInfo[turnKey];
       if (turn) {
-        html += `<div class="turn-section">
-          <h4>🤸 Alternative: ${turn.title}</h4>`;
-        for (const [level, exercises] of Object.entries(turn.exercises)) {
-          const labelMap = { bronze: 'Bronze', silver: 'Silber', gold: 'Gold' };
-          html += `<div class="turn-detail">
-            <div class="turn-level-label ${level}">${labelMap[level]}</div>
-            <ul>${exercises.map(e => `<li>${e}</li>`).join('')}</ul>
-          </div>`;
-        }
-        // Add PDF links based on group
-        const pdfLinks = {
-          kraft: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_kraft.pdf', label: 'Reck-Übungen (bebildert)' },
-          schnelligkeit: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_schnelligkeit.pdf', label: 'Sprung-Übungen (bebildert)' },
-          koordination: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_koordination.pdf', label: 'Boden/Drehsprung (bebildert)' },
-          koordination_w: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_koordination.pdf', label: 'Boden-Übungen (bebildert)' },
-          koordination_m: { url: 'https://sportabzeichen.tsv-erlabrunn.de/downloads/turnuebungen_koordination.pdf', label: 'Ringe-Übungen (bebildert)' }
-        };
-        const pdfInfo = pdfLinks[turnKey] || pdfLinks[key];
-        html += `<div class="turn-links">
-          📄 <a href="${pdfInfo.url}" target="_blank">${pdfInfo.label} →</a>
-          <a href="https://cdn.dosb.de/alter_Datenbestand/Sportabzeichen/Materialien_2018/DSA-Coach-UEbungsbooklet_interaktiv.pdf" target="_blank">DOSB Übungsbooklet →</a>
-        </div>`;
-        html += `<div class="safety-note">
-          ⚠️ <strong>Pflicht:</strong> Qualifizierte/r Turntrainer/in muss anwesend sein! Matten sichern, Schmuck ablegen, eng anliegende Kleidung.
-        </div></div>`;
+        html += renderTurnSection(turn, turnKey, key);
       }
     }
 
@@ -849,21 +1046,216 @@ function updateResults() {
 
   container.innerHTML = html;
 
-  // Swim section
-  const swimContainer = document.getElementById('swim-container');
-  const isAdult = age !== '16-17';
-  swimContainer.innerHTML = `
-    <div class="swim-section">
-      <h4>🏊 Schwimmnachweis (Pflicht)</h4>
-      <p>
-        <strong>200 m</strong> in max. <strong>11 Minuten</strong> oder <strong>15 Min. Dauerschwimmen</strong><br>
-        ${isAdult
-          ? '⚠️ <strong>Erwachsene: Alle 5 Jahre erneuern!</strong>'
-          : '✅ Einmaliger Nachweis reicht (Jugend)'}
-        <br>
-        <em>Alternative: Deutsches Schwimmabzeichen, Rettungsschwimmabzeichen o.ä.</em>
-      </p>
+  // Swim
+  document.getElementById('swim-container').innerHTML = renderSwim(isAdult);
+
+  // Calculator
+  renderCalculator(renderData);
+}
+
+function renderDiscipline(disc) {
+  return `<div class="discipline">
+    <div class="disc-name">
+      ${disc.name}
+      ${disc.indoor ? '<span class="indoor-tag">🏠 Halle</span>' : ''}
+      ${disc.ext ? '<span class="ext-tag">⭐ Erweitert</span>' : ''}
+    </div>
+    <div class="levels">
+      <div class="level level-bronze">
+        <div class="level-label">Bronze</div>
+        <div class="level-value${disc.bronze === '–' ? ' placeholder' : ''}">${disc.bronze}</div>
+      </div>
+      <div class="level level-silver">
+        <div class="level-label">Silber</div>
+        <div class="level-value${disc.silver === '–' ? ' placeholder' : ''}">${disc.silver}</div>
+      </div>
+      <div class="level level-gold">
+        <div class="level-label">Gold</div>
+        <div class="level-value${disc.gold === '–' ? ' placeholder' : ''}">${disc.gold}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderTurnSection(turn, turnKey, groupKey) {
+  const labelMap = { bronze: 'Bronze', silver: 'Silber', gold: 'Gold' };
+  let html = `<div class="turn-section">
+    <h4>🤸 Alternative: ${turn.title}</h4>`;
+  for (const [level, exercises] of Object.entries(turn.exercises)) {
+    html += `<div class="turn-detail">
+      <div class="turn-level-label ${level}">${labelMap[level]}</div>
+      <ul>${exercises.map(e => `<li>${e}</li>`).join('')}</ul>
     </div>`;
+  }
+  html += `<div class="turn-links">
+    📄 <a href="https://cdn.dosb.de/alter_Datenbestand/Sportabzeichen/Materialien_2018/DSA-Coach-UEbungsbooklet_interaktiv.pdf" target="_blank">DOSB Übungsbooklet →</a>
+  </div>`;
+  html += `<div class="safety-note">
+    ⚠️ <strong>Pflicht:</strong> Qualifizierte/r Turntrainer/in muss anwesend sein! Matten sichern, Schmuck ablegen, eng anliegende Kleidung.
+  </div></div>`;
+  return html;
+}
+
+function renderSwim(isAdult) {
+  return `<div class="swim-section">
+    <h4>🏊 Schwimmnachweis (Pflicht)</h4>
+    <p>
+      <strong>200 m</strong> in max. <strong>11 Minuten</strong> oder <strong>15 Min. Dauerschwimmen</strong><br>
+      ${isAdult
+        ? '⚠️ <strong>Erwachsene: Alle 5 Jahre erneuern!</strong>'
+        : '✅ Einmaliger Nachweis reicht (Jugend)'}
+      <br>
+      <em>Alternative: Deutsches Schwimmabzeichen, Rettungsschwimmabzeichen o.ä.</em>
+    </p>
+  </div>`;
+}
+
+function renderPlaceholderGroups() {
+  let html = '';
+  for (const [key, meta] of Object.entries(GROUP_META)) {
+    html += `<div class="group-card">
+      <div class="group-header" onclick="toggleGroup(this)">
+        <span class="icon">${meta.icon}</span>
+        Gruppe ${meta.num}: ${meta.label}
+        <span class="badge">Daten folgen</span>
+        <span class="chevron">▼</span>
+      </div>
+      <div class="group-body collapsed">
+        <div class="discipline">
+          <div class="disc-name">Platzhalter – Daten werden ergänzt</div>
+          <div class="levels">
+            <div class="level level-bronze">
+              <div class="level-label">Bronze</div>
+              <div class="level-value placeholder">–</div>
+            </div>
+            <div class="level level-silver">
+              <div class="level-label">Silber</div>
+              <div class="level-value placeholder">–</div>
+            </div>
+            <div class="level level-gold">
+              <div class="level-label">Gold</div>
+              <div class="level-value placeholder">–</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }
+  return html;
+}
+
+// ============================================================
+// Group accordion toggle
+// ============================================================
+function toggleGroup(header) {
+  header.classList.toggle('collapsed');
+  header.nextElementSibling.classList.toggle('collapsed');
+}
+
+// ============================================================
+// Points Calculator
+// ============================================================
+function renderCalculator(data) {
+  const calc = document.getElementById('calculator');
+  const groupsDiv = document.getElementById('calc-groups');
+  calcState = {};
+
+  let html = '';
+  for (const [gk, meta] of Object.entries(GROUP_META)) {
+    const discs = data[gk];
+    if (!discs) continue;
+    const normalDiscs = discs.filter(d => !d.isTurn);
+    if (normalDiscs.length === 0) continue;
+
+    calcState[gk] = {};
+    html += `<div class="calc-group">
+      <div class="calc-group-title">${meta.icon} ${meta.label}</div>`;
+
+    for (const disc of normalDiscs) {
+      calcState[gk][disc.name] = 'none';
+      html += `<div class="calc-disc-row">
+        <span class="calc-disc-name">${disc.name}</span>
+        <button class="calc-btn none active" onclick="calcSelect('${gk}','${disc.name.replace(/'/g,"\\'")}','none',this)">–</button>
+        <button class="calc-btn bronze" onclick="calcSelect('${gk}','${disc.name.replace(/'/g,"\\'")}','bronze',this)">🥉</button>
+        <button class="calc-btn silver" onclick="calcSelect('${gk}','${disc.name.replace(/'/g,"\\'")}','silver',this)">🥈</button>
+        <button class="calc-btn gold" onclick="calcSelect('${gk}','${disc.name.replace(/'/g,"\\'")}','gold',this)">🥇</button>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  groupsDiv.innerHTML = html;
+  calc.classList.remove('hidden');
+  updateCalcResult();
+}
+
+function calcSelect(group, discName, level, btn) {
+  // Deselect all in this row
+  const row = btn.parentElement;
+  row.querySelectorAll('.calc-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  // If selecting a level for a disc, deselect other discs in same group
+  if (level !== 'none') {
+    const groupState = calcState[group];
+    for (const name in groupState) {
+      groupState[name] = 'none';
+    }
+    // Update UI: deselect all in this group
+    const groupDiv = row.closest('.calc-group');
+    groupDiv.querySelectorAll('.calc-disc-row').forEach(r => {
+      r.querySelectorAll('.calc-btn').forEach(b => b.classList.remove('active'));
+      if (r !== row) {
+        r.querySelector('.calc-btn.none').classList.add('active');
+      }
+    });
+    btn.classList.add('active');
+  }
+
+  calcState[group][discName] = level;
+  updateCalcResult();
+}
+
+function updateCalcResult() {
+  const resultDiv = document.getElementById('calc-result');
+  let totalPoints = 0;
+  let groupsCovered = 0;
+  let groupDetails = [];
+
+  for (const [gk, meta] of Object.entries(GROUP_META)) {
+    if (!calcState[gk]) continue;
+    let bestInGroup = 0;
+    let bestName = null;
+    let bestLevel = null;
+    for (const [name, level] of Object.entries(calcState[gk])) {
+      const pts = { none: 0, bronze: 1, silver: 2, gold: 3 }[level] || 0;
+      if (pts > bestInGroup) {
+        bestInGroup = pts;
+        bestName = name;
+        bestLevel = level;
+      }
+    }
+    if (bestInGroup > 0) {
+      groupsCovered++;
+      totalPoints += bestInGroup;
+      groupDetails.push(`${meta.icon} ${bestName}: ${bestLevel}`);
+    }
+  }
+
+  if (groupsCovered < 4) {
+    resultDiv.className = 'calc-result incomplete';
+    resultDiv.innerHTML = `Wähle mindestens eine Disziplin pro Gruppe (${groupsCovered}/4)`;
+    return;
+  }
+
+  let medal, cls;
+  if (totalPoints >= 11) { medal = '🥇 Gold'; cls = 'gold'; }
+  else if (totalPoints >= 8) { medal = '🥈 Silber'; cls = 'silver'; }
+  else { medal = '🥉 Bronze'; cls = 'bronze'; }
+
+  resultDiv.className = `calc-result ${cls}`;
+  resultDiv.innerHTML = `${medal} – ${totalPoints} Punkte
+    <div class="calc-score-breakdown">${groupDetails.join(' · ')}</div>`;
 }
 </script>
 </body>
