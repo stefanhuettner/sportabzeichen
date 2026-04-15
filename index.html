@@ -470,6 +470,37 @@
   footer a { color: var(--primary); text-decoration: none; }
   footer a:hover { text-decoration: underline; }
 
+  .footer-section strong {
+    display: block;
+    font-size: 0.85em;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.82em;
+    background: white;
+    transition: all 0.15s;
+  }
+
+  .footer-links a:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    text-decoration: none;
+  }
+
   @media (max-width: 600px) {
     .selector { flex-direction: column; }
     header h1 { font-size: 1.3em; }
@@ -580,8 +611,28 @@
 </div>
 
 <footer>
-  Quelle: <a href="https://deutsches-sportabzeichen.de/materialien" target="_blank">DOSB Leistungskatalog 2025/2026</a> ·
-  <a href="https://cdn.dosb.de/Relaunch_2024/Sportabzeichen/Materialien_2018/DSA-Leitfaden_fuer_PrueferInnen_zu_den_Turn-Aufgaben_2018.pdf" target="_blank">Turn-Leitfaden (PDF)</a>
+  <div class="footer-section">
+    <strong>📄 Offizielle DOSB-Kataloge (PDF)</strong>
+    <div class="footer-links">
+      <a href="https://cdn.dosb.de/Relaunch_2024/Sportabzeichen/Materialien_2026/DSA_Erw_Leistungskatalog_2026_A5_Einzelseiten_V5_WEB_V3_24032026.pdf" target="_blank">Leistungskatalog 2026 (Standard)</a>
+      <a href="https://cdn.dosb.de/Relaunch_2024/Sportabzeichen/Materialien_2025/DSA_Leistungsuebersicht_Erwachsene_A4_2025_web_SCREEN.pdf" target="_blank">Leistungsübersicht 2025</a>
+      <a href="https://cdn.dosb.de/Relaunch_2024/Sportabzeichen/Materialien_2025/DSA_Leporello_langDIN_2025_einzelseiten_SCREEN.pdf" target="_blank">Leporello 2025</a>
+      <a href="https://www.lsb-berlin.de/fileadmin/redaktion/landessportbund/sport_fuer_alle/sportabzeichen/sportabzeichen_2026/DSA_Erw_Leistungskatalog_2026_Kraft_Koordination.pdf" target="_blank">Erw. Katalog Kraft/Koordination 2026</a>
+      <a href="https://cdn.dosb.de/Relaunch_2024/Sportabzeichen/Materialien_2018/DSA-Leitfaden_fuer_PrueferInnen_zu_den_Turn-Aufgaben_2018.pdf" target="_blank">Turn-Leitfaden</a>
+      <a href="https://cdn.dosb.de/alter_Datenbestand/Sportabzeichen/Materialien_2018/DSA-Coach-UEbungsbooklet_interaktiv.pdf" target="_blank">Übungsbooklet</a>
+    </div>
+  </div>
+  <div class="footer-section" style="margin-top:12px;">
+    <strong>🔗 Links</strong>
+    <div class="footer-links">
+      <a href="https://deutsches-sportabzeichen.de" target="_blank">deutsches-sportabzeichen.de</a>
+      <a href="https://deutsches-sportabzeichen.de/materialien" target="_blank">Alle Materialien</a>
+      <a href="https://sportabzeichen-digital.de" target="_blank">Sportabzeichen Digital</a>
+    </div>
+  </div>
+  <div style="margin-top:12px; font-size:0.75em; color:var(--text-muted);">
+    Quelle: DOSB Leistungskatalog 2025/2026 · Stand: April 2026 · Alle Angaben ohne Gewähr
+  </div>
 </footer>
 
 <script>
